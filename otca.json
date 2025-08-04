@@ -1,0 +1,1842 @@
+[
+    {
+        "question": "Which of the following are the three primary pillars of observability in OpenTelemetry?",
+        "options": {
+            "A": "Alerts, Dashboards, Monitors",
+            "B": "Traces, Metrics, Logs",
+            "C": "APM, Log Management, Tracing Tools",
+            "D": "Instrumentation, Collection, Storage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of semantic conventions in OpenTelemetry?",
+        "options": {
+            "A": "To define vendor-specific telemetry formats",
+            "B": "To ensure consistent naming and structure of telemetry data",
+            "C": "To replace instrumentation libraries",
+            "D": "To optimize Collector performance"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which type of instrumentation requires no code changes to the application?",
+        "options": {
+            "A": "Manual instrumentation",
+            "B": "Library-based instrumentation",
+            "C": "Automatic instrumentation",
+            "D": "Custom instrumentation"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "In OpenTelemetry, what does a 'span' represent in tracing?",
+        "options": {
+            "A": "A unique identifier for an entire trace",
+            "B": "A single unit of work within a trace",
+            "C": "A collection of related metrics",
+            "D": "A log entry associated with a request"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component of OpenTelemetry is responsible for implementing the API and handling telemetry generation logic?",
+        "options": {
+            "A": "Collector",
+            "B": "Exporter",
+            "C": "SDK",
+            "D": "Receiver"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the role of the OpenTelemetry Protocol (OTLP)?",
+        "options": {
+            "A": "To store telemetry data in backends",
+            "B": "To standardize telemetry data transmission between components",
+            "C": "To generate logs from trace data",
+            "D": "To replace HTTP for metric collection"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a type of metric instrument in OpenTelemetry?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Span",
+            "D": "Histogram"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is context propagation in OpenTelemetry?",
+        "options": {
+            "A": "Storing telemetry data in a centralized database",
+            "B": "Passing trace and span information across service boundaries",
+            "C": "Aggregating metrics from multiple sources",
+            "D": "Formatting logs for better readability"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component of the OpenTelemetry Collector is responsible for receiving telemetry data from sources?",
+        "options": {
+            "A": "Exporter",
+            "B": "Processor",
+            "C": "Receiver",
+            "D": "Extension"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of a processor in the OpenTelemetry Collector?",
+        "options": {
+            "A": "To send telemetry data to backends",
+            "B": "To preprocess telemetry (e.g., filtering, enriching)",
+            "C": "To define network endpoints for data ingestion",
+            "D": "To store telemetry temporarily"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which deployment model of the OpenTelemetry Collector runs as a container alongside the application in the same pod?",
+        "options": {
+            "A": "Node agent",
+            "B": "Standalone service",
+            "C": "Sidecar",
+            "D": "Cluster proxy"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the benefit of using the batch processor in the Collector?",
+        "options": {
+            "A": "It encrypts telemetry data",
+            "B": "It reduces network overhead by sending data in batches",
+            "C": "It converts metrics to traces",
+            "D": "It automatically debugs pipeline errors"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In OpenTelemetry SDK configuration, what is the role of a sampler?",
+        "options": {
+            "A": "To decide which spans to collect and export",
+            "B": "To format logs for export",
+            "C": "To aggregate metric data",
+            "D": "To propagate context across services"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which signal in OpenTelemetry is best suited for tracking the duration of a request in a distributed system?",
+        "options": {
+            "A": "Logs",
+            "B": "Metrics",
+            "C": "Traces",
+            "D": "Events"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the function of an exporter in OpenTelemetry?",
+        "options": {
+            "A": "To receive telemetry from applications",
+            "B": "To send telemetry data to backends (e.g., Jaeger, Prometheus)",
+            "C": "To process telemetry data",
+            "D": "To generate spans automatically"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a key benefit of using OpenTelemetry for observability?",
+        "options": {
+            "A": "It is tied to a specific vendor's backend",
+            "B": "It provides vendor-agnostic telemetry collection",
+            "C": "It replaces all existing monitoring tools",
+            "D": "It only supports Java applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the OpenTelemetry Collector's pipeline configuration?",
+        "options": {
+            "A": "To define the lifecycle of SDK instances",
+            "B": "To specify how telemetry flows through receivers, processors, and exporters",
+            "C": "To generate automatic instrumentation agents",
+            "D": "To set log levels for applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which type of metric is used to track values that can both increase and decrease (e.g., active connections)?",
+        "options": {
+            "A": "Counter",
+            "B": "UpDownCounter",
+            "C": "Gauge",
+            "D": "Histogram"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In manual instrumentation, which OpenTelemetry API method is used to create a new span?",
+        "options": {
+            "A": "tracer.start_span()",
+            "B": "meter.create_counter()",
+            "C": "logger.log()",
+            "D": "collector.export()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the role of resource attributes in OpenTelemetry?",
+        "options": {
+            "A": "To describe the entity producing telemetry (e.g., service name, host)",
+            "B": "To define span duration",
+            "C": "To format log messages",
+            "D": "To sample traces"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which component of OpenTelemetry helps in correlating logs with traces?",
+        "options": {
+            "A": "Metric aggregator",
+            "B": "Trace ID and Span ID in log entries",
+            "C": "Collector exporter",
+            "D": "Sampler"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary challenge in observability for polyglot distributed applications that OpenTelemetry addresses?",
+        "options": {
+            "A": "Inconsistent telemetry formats across languages",
+            "B": "High resource usage of monitoring tools",
+            "C": "Difficulty in deploying applications",
+            "D": "Lack of logging frameworks"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is part of the OpenTelemetry SDK pipelines?",
+        "options": {
+            "A": "Receiver configuration",
+            "B": "Span processors and exporters",
+            "C": "Collector deployment",
+            "D": "Log aggregation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the 'attributes' in a span?",
+        "options": {
+            "A": "To uniquely identify the trace",
+            "B": "To add metadata (e.g., HTTP method, user ID) to the span",
+            "C": "To define the span's start and end times",
+            "D": "To sample the span"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry component is responsible for transforming telemetry data (e.g., adding attributes) before export?",
+        "options": {
+            "A": "Receiver",
+            "B": "Processor",
+            "C": "Exporter",
+            "D": "SDK"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the recommended way to handle sensitive data in telemetry with OpenTelemetry?",
+        "options": {
+            "A": "Encrypt all telemetry data at rest",
+            "B": "Use processors to scrub sensitive attributes",
+            "C": "Disable instrumentation for sensitive endpoints",
+            "D": "Store sensitive data in logs only"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which deployment model of the OpenTelemetry Collector is best suited for collecting telemetry from all applications on a single host?",
+        "options": {
+            "A": "Sidecar",
+            "B": "Node agent",
+            "C": "Standalone service",
+            "D": "Per-pod collector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In OpenTelemetry, what does 'composability' of the SDK refer to?",
+        "options": {
+            "A": "The ability to combine multiple Collectors",
+            "B": "The ability to customize SDK components (e.g., samplers, processors)",
+            "C": "The ability to merge traces from different services",
+            "D": "The ability to convert metrics to logs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a key responsibility when maintaining observability pipelines?",
+        "options": {
+            "A": "Writing application business logic",
+            "B": "Debugging pipeline errors and ensuring data flow",
+            "C": "Designing UI dashboards",
+            "D": "Deploying application code"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of schema management in OpenTelemetry?",
+        "options": {
+            "A": "To ensure backward compatibility as telemetry formats evolve",
+            "B": "To encrypt telemetry data in transit",
+            "C": "To sample traces dynamically",
+            "D": "To aggregate metric data from multiple sources"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the definition of observability according to the document?",
+        "options": {
+            "A": "The ability to directly control system behavior",
+            "B": "A measure of how well internal system states can be inferred from external outputs",
+            "C": "The process of generating logs for debugging",
+            "D": "A tool for optimizing application performance"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT part of the three factors composing the model for understanding distributed system behavior?",
+        "options": {
+            "A": "Workload (operations to fulfill objectives)",
+            "B": "Software abstractions (load balancers, services, etc.)",
+            "C": "Physical machines (providing computational resources)",
+            "D": "User interfaces (how users interact with the system)"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What is a key characteristic of structured logging mentioned in the document?",
+        "options": {
+            "A": "It is designed for human readability only",
+            "B": "It encodes events as key/value pairs for machine readability",
+            "C": "It is stored locally on individual machines",
+            "D": "It replaces metrics and traces in observability"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How do metrics differ from logs according to the document?",
+        "options": {
+            "A": "Metrics provide detailed individual event information, while logs show aggregates",
+            "B": "Metrics are append-only, while logs are overwritten",
+            "C": "Metrics represent aggregates (single numerical values), while logs record individual events",
+            "D": "Metrics are unstructured, while logs are structured"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What problem in distributed systems led to the development of distributed tracing?",
+        "options": {
+            "A": "Inability to generate metrics for multiple services",
+            "B": "Difficulty in reconstructing the chain of events across services using traditional logs",
+            "C": "High storage costs of structured logs",
+            "D": "Lack of standardization in metric formats"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why are logs, metrics, and traces referred to as the 'three pillars of observability'?",
+        "options": {
+            "A": "They are mutually exclusive and cannot be used together",
+            "B": "Each has unique strengths, stands alone, and complements the others",
+            "C": "They are controlled by separate vendors and cannot be integrated",
+            "D": "They all use the same data format and transmission protocol"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a major issue with siloed telemetry systems according to the document?",
+        "options": {
+            "A": "They generate too much data",
+            "B": "They make it hard to correlate information across signals, increasing cognitive load",
+            "C": "They are too expensive to maintain",
+            "D": "They only work with monolithic applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key goal of OpenTelemetry mentioned in the document?",
+        "options": {
+            "A": "To replace all existing observability tools",
+            "B": "To provide a unified, vendor-neutral framework for telemetry (traces, metrics, logs)",
+            "C": "To create a proprietary data storage solution for telemetry",
+            "D": "To optimize application code automatically"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT something OpenTelemetry aims to be, according to the document?",
+        "options": {
+            "A": "An all-in-one monitoring tool",
+            "B": "A vendor-neutral telemetry framework",
+            "C": "A cross-platform solution supporting multiple languages",
+            "D": "A tool for standardizing telemetry collection"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the 'instrument once, use everywhere' promise of OpenTelemetry mean?",
+        "options": {
+            "A": "Instrumentation needs to be redone for each new backend",
+            "B": "Once instrumented, telemetry can work with any compatible backend without re-instrumentation",
+            "C": "Instrumentation is only needed once per application lifecycle",
+            "D": "Automatic instrumentation replaces all manual efforts permanently"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of OpenTelemetry's Signal Specification?",
+        "options": {
+            "A": "To define language-specific implementation details",
+            "B": "To ensure consistency and interoperability for telemetry signals (tracing, metrics, logs) across languages",
+            "C": "To replace the need for SDKs",
+            "D": "To specify vendor-specific telemetry formats"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why is the separation of OpenTelemetry API and SDK important?",
+        "options": {
+            "A": "It allows open source libraries to include lightweight API dependencies without heavy SDKs",
+            "B": "It makes telemetry collection slower but more accurate",
+            "C": "It ensures only one implementation of telemetry processing exists",
+            "D": "It limits telemetry to specific programming languages"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the role of the OpenTelemetry Collector?",
+        "options": {
+            "A": "To generate telemetry data from applications",
+            "B": "To receive, process, and export telemetry data to backends",
+            "C": "To replace application instrumentation",
+            "D": "To visualize telemetry data in dashboards"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which transport mechanisms does OTLP support according to the document?",
+        "options": {
+            "A": "HTTP/1.1, HTTP/2, and gRPC",
+            "B": "Only TCP",
+            "C": "FTP and SMTP",
+            "D": "UDP only"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary advantage of using OTLP as the wire protocol?",
+        "options": {
+            "A": "It is proprietary to OpenTelemetry, ensuring exclusivity",
+            "B": "It avoids data format conversion costs and increases consistency",
+            "C": "It only works with specific cloud providers",
+            "D": "It replaces the need for the OpenTelemetry Collector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is instrumentation in the context of observability?",
+        "options": {
+            "A": "The process of deploying applications to production",
+            "B": "Adding code or tools to collect telemetry data (logs, metrics, traces) from applications",
+            "C": "The visualization of telemetry data",
+            "D": "The storage of telemetry data in databases"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which type of instrumentation uses agents to dynamically inject telemetry logic into applications at runtime without code changes?",
+        "options": {
+            "A": "Manual instrumentation",
+            "B": "Instrumentation libraries",
+            "C": "Automatic (zero-code) instrumentation",
+            "D": "Framework-specific instrumentation"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a challenge of instrumentation libraries mentioned in the document?",
+        "options": {
+            "A": "They require no code changes",
+            "B": "They may introduce additional dependencies and have limited community support",
+            "C": "They work with all programming languages equally well",
+            "D": "They replace the need for automatic instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When is manual instrumentation most appropriate according to the document?",
+        "options": {
+            "A": "When auto-instrumentation is available and sufficient",
+            "B": "When fine-grained control over telemetry (e.g., custom business logic) is needed",
+            "C": "When no code changes are allowed",
+            "D": "When the application uses only standard libraries"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does automatic instrumentation in Java typically work?",
+        "options": {
+            "A": "By requiring developers to add SDK calls to every method",
+            "B": "By using bytecode manipulation via Java agents (e.g., premain method)",
+            "C": "By replacing the JVM with a custom runtime",
+            "D": "By integrating with logging frameworks only"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the @WithSpan annotation in Java instrumentation?",
+        "options": {
+            "A": "To disable instrumentation for a specific method",
+            "B": "To mark a method for tracing, making it visible in spans",
+            "C": "To convert a method's output to a metric",
+            "D": "To automatically log all method parameters"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In manual tracing instrumentation, what does tracer.start_as_current_span() do?",
+        "options": {
+            "A": "Stops the current span and starts a new one",
+            "B": "Creates a new span, attaches it to the current context, and ends it when the method returns",
+            "C": "Exports all spans to the Collector immediately",
+            "D": "Samples a span based on predefined rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of resource attributes in telemetry?",
+        "options": {
+            "A": "To track dynamic values that change with each request",
+            "B": "To provide static metadata about the telemetry source (e.g., service name, version)",
+            "C": "To define the structure of log messages",
+            "D": "To sample traces based on resource usage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why are semantic conventions important for resource attributes?",
+        "options": {
+            "A": "They ensure consistency, prevent typos, and avoid ambiguity in attribute naming",
+            "B": "They make telemetry data proprietary to OpenTelemetry",
+            "C": "They replace the need for resource attributes",
+            "D": "They limit attributes to numerical values only"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is context propagation in distributed tracing?",
+        "options": {
+            "A": "Storing trace data in a centralized database",
+            "B": "Passing trace ID, span ID, and context across service boundaries (e.g., via HTTP headers)",
+            "C": "Aggregating metrics from multiple services",
+            "D": "Converting traces to logs for easier analysis"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the format of the traceparent header used for context propagation?",
+        "options": {
+            "A": "<trace-id>-<span-id>-<flags>",
+            "B": "<version>-<trace-id>-<parent-id>-<trace-flags>",
+            "C": "<service-name>-<timestamp>-<span-id>",
+            "D": "<metric-name>-<value>-<timestamp>"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type is best suited for tracking the number of active connections (a value that can increase and decrease)?",
+        "options": {
+            "A": "Counter",
+            "B": "UpDownCounter",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of a Histogram instrument in metrics?",
+        "options": {
+            "A": "To track cumulative values that only increase",
+            "B": "To analyze the distribution of values (e.g., request latency percentiles)",
+            "C": "To measure the current state of a value at a specific time",
+            "D": "To replace logs for event tracking"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of Views in OpenTelemetry metrics?",
+        "options": {
+            "A": "To visualize metrics in dashboards",
+            "B": "To customize how metrics are collected (e.g., adjusting aggregation, renaming instruments)",
+            "C": "To generate logs from metric data",
+            "D": "To propagate metric context across services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does OpenTelemetry integrate with existing logging solutions?",
+        "options": {
+            "A": "It replaces them with a proprietary logging system",
+            "B": "It uses a Logs Bridge API to connect existing logging libraries with OpenTelemetry telemetry",
+            "C": "It disables all existing logs to avoid duplication",
+            "D": "It converts logs to metrics automatically"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What information in OpenTelemetry logs helps correlate them with traces?",
+        "options": {
+            "A": "Metric values embedded in logs",
+            "B": "Trace ID and Span ID fields in log entries",
+            "C": "The service name alone",
+            "D": "The log timestamp matching trace start time"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main goal of the 'Getting Started with OpenTelemetry' course?",
+        "options": {
+            "A": "To replace all existing monitoring tools with OpenTelemetry",
+            "B": "To provide in-depth introduction to OpenTelemetry, covering core concepts, components, and practical applications",
+            "C": "To teach advanced cloud architecture design",
+            "D": "To focus solely on manual instrumentation of Java applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to the course, approximately how many hours are needed to complete the course?",
+        "options": {
+            "A": "2-3 hours",
+            "B": "8-10 hours",
+            "C": "20-25 hours",
+            "D": "30-40 hours"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a target audience for the course?",
+        "options": {
+            "A": "Software Developers",
+            "B": "DevOps Engineers",
+            "C": "Network Security Specialists",
+            "D": "Site Reliability Engineers (SREs)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a prerequisite for the course mentioned in the document?",
+        "options": {
+            "A": "Advanced knowledge of Kubernetes",
+            "B": "Basic understanding of programming, preferably with Python and Java",
+            "C": "Experience with OpenTelemetry in production environments",
+            "D": "Certification in cloud platforms like AWS or Azure"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the course prepare students to do?",
+        "options": {
+            "A": "Design and build cloud-native applications from scratch",
+            "B": "Enhance observability of applications using OpenTelemetry",
+            "C": "Deploy and manage Kubernetes clusters",
+            "D": "Develop custom observability backends"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the recommended local setup for the course labs?",
+        "options": {
+            "A": "Docker, Visual Studio Code, and VS Code Dev Containers extension",
+            "B": "VirtualBox, IntelliJ IDEA, and Git",
+            "C": "AWS Cloud9, Python 3.8, and Maven 3.6",
+            "D": "Windows Subsystem for Linux, Eclipse, and Jenkins"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "In the context of distributed systems, what is workload according to the document?",
+        "options": {
+            "A": "The physical resources like CPU and RAM",
+            "B": "The operations a system performs to fulfill its objectives (e.g., processing user requests)",
+            "C": "The software components like load balancers and containers",
+            "D": "The network bandwidth used by the system"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key characteristic of logs as described in the document?",
+        "options": {
+            "A": "They are numerical aggregates of events",
+            "B": "They are append-only data structures recording events with timestamps and messages",
+            "C": "They track the flow of requests across distributed services",
+            "D": "They are only generated by automatic instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why did distributed tracing emerge as a solution?",
+        "options": {
+            "A": "To replace metrics in monitoring distributed systems",
+            "B": "To address the difficulty of debugging complex problems in distributed systems using traditional logs",
+            "C": "To reduce the storage cost of logs",
+            "D": "To simplify the deployment of microservices"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is telemetry as defined in the document?",
+        "options": {
+            "A": "The process of visualizing data in dashboards",
+            "B": "The automatic collection and transmission of data from remote systems for monitoring",
+            "C": "The manual logging of errors in applications",
+            "D": "The design of distributed systems"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a problem with siloed telemetry systems mentioned in the document?",
+        "options": {
+            "A": "They generate too little data for analysis",
+            "B": "They make it hard to correlate information across different telemetry types, increasing cognitive load",
+            "C": "They are too easy to set up and maintain",
+            "D": "They only work with monolithic applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a goal of OpenTelemetry related to vendor lock-in?",
+        "options": {
+            "A": "To tie users to specific observability vendors",
+            "B": "To separate telemetry generation from analysis, allowing users to switch platforms without re-instrumentation",
+            "C": "To create proprietary data formats for each vendor",
+            "D": "To require re-instrumentation when changing backends"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is OpenTelemetry NOT, according to the document?",
+        "options": {
+            "A": "An all-in-one monitoring or observability tool",
+            "B": "A vendor-neutral framework for telemetry",
+            "C": "A tool for standardizing telemetry collection",
+            "D": "A cross-platform solution supporting multiple languages"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the OpenTelemetry Signal Specification?",
+        "options": {
+            "A": "To define language-specific SDK implementations",
+            "B": "To provide a language-agnostic standard for telemetry signals (tracing, metrics, logs) ensuring consistency",
+            "C": "To replace the need for instrumentation libraries",
+            "D": "To specify how telemetry is visualized in dashboards"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of the OpenTelemetry Collector in the telemetry pipeline?",
+        "options": {
+            "A": "To generate telemetry data from applications",
+            "B": "To receive, process, and export telemetry data to various backends",
+            "C": "To replace application instrumentation",
+            "D": "To store telemetry data long-term"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What encoding formats does OTLP support?",
+        "options": {
+            "A": "Only JSON",
+            "B": "Protocol Buffers (Protobuf) and JSON",
+            "C": "XML and CSV",
+            "D": "YAML and TXT"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the hands-on lab, what is the architecture of the sample application?",
+        "options": {
+            "A": "A single monolithic Python application",
+            "B": "A polyglot distributed application with Java Spring Boot backend, Java Thymeleaf frontend, and Python Flask frontend",
+            "C": "A Node.js application with a MongoDB database",
+            "D": "A .NET application deployed on Kubernetes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the Jaeger UI in the lab?",
+        "options": {
+            "A": "To visualize metrics like JVM thread count",
+            "B": "To display and analyze distributed traces",
+            "C": "To manage Docker containers",
+            "D": "To write manual instrumentation code"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How is Prometheus used in the lab?",
+        "options": {
+            "A": "To collect and store metrics in a time-series database",
+            "B": "To generate logs for the sample application",
+            "C": "To replace the OpenTelemetry Collector",
+            "D": "To instrument Python applications automatically"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is instrumentation libraries in OpenTelemetry?",
+        "options": {
+            "A": "Libraries that replace the need for any code changes",
+            "B": "Standalone libraries that inject OpenTelemetry API calls into frameworks lacking native support",
+            "C": "Tools that automatically deploy applications to production",
+            "D": "Databases for storing telemetry data"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a challenge of manual instrumentation mentioned in the document?",
+        "options": {
+            "A": "It requires no code changes",
+            "B": "It is labor-intensive and requires learning the telemetry framework, especially in legacy codebases",
+            "C": "It cannot capture custom business logic",
+            "D": "It works with all programming languages equally well"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does automatic instrumentation in Java work, as described in the lab?",
+        "options": {
+            "A": "By requiring developers to add @WithSpan annotations to every method",
+            "B": "By using bytecode manipulation via Java agents (e.g., premain method) to inject instrumentation at runtime",
+            "C": "By modifying the application's source code during build",
+            "D": "By integrating with the JVM garbage collector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the @SpanAttribute annotation in Java instrumentation?",
+        "options": {
+            "A": "To disable a span for a specific method parameter",
+            "B": "To include the value of a method parameter as an attribute in the span",
+            "C": "To convert a parameter to a metric",
+            "D": "To set the sampling rate for the span"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the Python lab, how is a custom span added to a trace?",
+        "options": {
+            "A": "By using the @WithSpan decorator",
+            "B": "By using tracer.start_as_current_span() in a context manager",
+            "C": "By modifying the Collector configuration",
+            "D": "By enabling automatic instrumentation for all functions"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of resource attributes in manual instrumentation?",
+        "options": {
+            "A": "To track dynamic values that change with each request",
+            "B": "To provide static metadata about the telemetry source (e.g., service name, version)",
+            "C": "To define the span duration",
+            "D": "To sample traces based on resource usage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of semantic conventions in OpenTelemetry?",
+        "options": {
+            "A": "To allow arbitrary naming of attributes for flexibility",
+            "B": "To provide standardized naming and structure for telemetry data, reducing ambiguity",
+            "C": "To make telemetry data proprietary to OpenTelemetry",
+            "D": "To replace the need for resource attributes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the function of the inject() method in context propagation?",
+        "options": {
+            "A": "To extract trace context from incoming requests",
+            "B": "To insert trace context (e.g., traceparent header) into outgoing requests",
+            "C": "To delete trace context from a span",
+            "D": "To sample traces based on context"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type is used to track cumulative values that only increase (e.g., total requests)?",
+        "options": {
+            "A": "Gauge",
+            "B": "Counter",
+            "C": "UpDownCounter",
+            "D": "Histogram"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of Views in OpenTelemetry metrics?",
+        "options": {
+            "A": "To visualize metrics in Grafana dashboards",
+            "B": "To customize how metrics are collected (e.g., adjusting aggregation, renaming instruments)",
+            "C": "To generate logs from metric data",
+            "D": "To propagate metric context across services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does OpenTelemetry integrate with existing logging libraries?",
+        "options": {
+            "A": "By replacing them with a new logging framework",
+            "B": "By using a Logs Bridge API to connect existing libraries with OpenTelemetry telemetry",
+            "C": "By disabling all existing logs to avoid duplication",
+            "D": "By converting logs to traces automatically"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the benefit of correlating logs with traces in OpenTelemetry?",
+        "options": {
+            "A": "It reduces the number of logs generated",
+            "B": "It allows linking log entries to the specific trace and span, providing context for troubleshooting",
+            "C": "It replaces the need for metrics",
+            "D": "It makes logs unreadable by humans"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main objective of the 'Getting Started with OpenTelemetry' course regarding practical skills?",
+        "options": {
+            "A": "To teach only theoretical concepts of observability",
+            "B": "To enable learners to automatically and manually instrument code, set up data collection, and persist collected data",
+            "C": "To focus on developing cloud-native applications from scratch",
+            "D": "To train learners on specific observability backend tools like Datadog"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How long is the access period for the course from the registration date?",
+        "options": {
+            "A": "3 months",
+            "B": "6 months",
+            "C": "12 months",
+            "D": "24 months"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of end-of-chapter knowledge check questions in the course?",
+        "options": {
+            "A": "To be graded and count towards the final course score",
+            "B": "To help comprehend course content and reinforce learning",
+            "C": "To replace the final exam",
+            "D": "To test advanced programming skills"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What score is required to successfully complete the course's final exam?",
+        "options": {
+            "A": "50% or higher",
+            "B": "60% or higher",
+            "C": "70% or higher",
+            "D": "90% or higher"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is a prerequisite for the course?",
+        "options": {
+            "A": "Advanced knowledge of OpenTelemetry",
+            "B": "Basic understanding of distributed systems and APIs",
+            "C": "Experience with Kubernetes administration",
+            "D": "Certification in cloud platforms"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the recommended setup for the course's hands-on labs?",
+        "options": {
+            "A": "AWS EC2 instances with pre-installed tools",
+            "B": "Docker, Visual Studio Code, and VS Code Dev Containers extension",
+            "C": "Physical servers with Ubuntu 20.04",
+            "D": "macOS-only development environment"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the estimated hard disk space required for the recommended local setup?",
+        "options": {
+            "A": "1GB",
+            "B": "5GB",
+            "C": "10GB",
+            "D": "20GB"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the context of distributed systems, what are software abstractions according to the course?",
+        "options": {
+            "A": "Physical machines providing computational resources",
+            "B": "Operations performed to fulfill system objectives",
+            "C": "Elements like load balancers, services, pods, and containers",
+            "D": "User interfaces for system interaction"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Why did structured logging emerge?",
+        "options": {
+            "A": "To replace metrics in observability",
+            "B": "To handle unmanageable log volumes by making events machine-readable via key/value pairs",
+            "C": "To reduce the need for log aggregation tools",
+            "D": "To simplify human readability of logs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the key characteristic of metrics as described in the course?",
+        "options": {
+            "A": "They are append-only records of individual events",
+            "B": "They represent aggregated numerical values derived from groups of events",
+            "C": "They track the flow of requests across distributed services",
+            "D": "They are unstructured and hard to analyze"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What problem did Google's Dapper address?",
+        "options": {
+            "A": "Inefficient storage of metrics",
+            "B": "Difficulty in debugging complex issues in distributed systems using traditional logs",
+            "C": "Lack of standardization in log formats",
+            "D": "High latency in metric collection"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main issue with vertical integration in observability systems?",
+        "options": {
+            "A": "They focus on a single signal, leading to siloed telemetry",
+            "B": "They are too complex to set up",
+            "C": "They are open-source and lack vendor support",
+            "D": "They cannot handle high volumes of data"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Why is vendor lock-in a problem in traditional observability solutions?",
+        "options": {
+            "A": "It allows easy migration between tools",
+            "B": "It requires re-instrumentation of the entire system to switch tools, incurring high costs",
+            "C": "It promotes competition among vendors",
+            "D": "It standardizes telemetry data formats"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key goal of OpenTelemetry related to telemetry generation and analysis?",
+        "options": {
+            "A": "To tie telemetry generation tightly to specific analysis tools",
+            "B": "To separate telemetry generation from analysis, enabling tool switching without re-instrumentation",
+            "C": "To replace all existing analysis tools",
+            "D": "To make telemetry generation dependent on vendor-specific SDKs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the OpenTelemetry Protocol (OTLP) designed to standardize?",
+        "options": {
+            "A": "Storage formats for telemetry data",
+            "B": "How telemetry data is encoded in memory and transported across the network",
+            "C": "Visualization of metrics in dashboards",
+            "D": "Manual instrumentation APIs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the OpenTelemetry Framework, what does the Signal Specification ensure?",
+        "options": {
+            "A": "Consistency in telemetry collection across different languages and platforms",
+            "B": "Vendor-specific implementations of telemetry tools",
+            "C": "Replacement of SDKs with APIs",
+            "D": "Automatic deployment of collectors"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Why is the separation of API and SDK important in OpenTelemetry?",
+        "options": {
+            "A": "It makes instrumentation more complex",
+            "B": "It allows open-source libraries to include lightweight API dependencies without heavy SDKs",
+            "C": "It limits telemetry to specific programming languages",
+            "D": "It requires re-instrumentation when SDKs are updated"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of the OpenTelemetry Collector in telemetry pipelines?",
+        "options": {
+            "A": "To generate telemetry data from applications",
+            "B": "To receive, process, and export telemetry data to various backends",
+            "C": "To replace application instrumentation",
+            "D": "To visualize telemetry data"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the 'Hands-on Lab: OpenTelemetry in Action', what is the sample application's functionality?",
+        "options": {
+            "A": "A simple ToDo list with Java and Python components",
+            "B": "A real-time chat application",
+            "C": "A e-commerce platform",
+            "D": "A database management system"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "How is telemetry data from the sample application exported to Jaeger and Prometheus in the lab?",
+        "options": {
+            "A": "Directly from the application without a collector",
+            "B": "Via the OpenTelemetry Collector",
+            "C": "Using custom scripts",
+            "D": "Through Kubernetes operators"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What happens when you submit an item named 'slow' in the sample application lab?",
+        "options": {
+            "A": "The application crashes immediately",
+            "B": "The thread is paused for a second, creating a slow-running span visible in Jaeger",
+            "C": "No telemetry data is generated",
+            "D": "The item is stored but not traced"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of instrumentation libraries in OpenTelemetry?",
+        "options": {
+            "A": "To replace automatic instrumentation agents",
+            "B": "To inject OpenTelemetry API calls into frameworks lacking native OpenTelemetry support",
+            "C": "To store telemetry data in databases",
+            "D": "To visualize traces in dashboards"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a challenge of using instrumentation libraries?",
+        "options": {
+            "A": "They require no additional dependencies",
+            "B": "They may introduce dependency management complexities and have limited community support",
+            "C": "They work seamlessly with all framework versions",
+            "D": "They eliminate the need for manual instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does automatic instrumentation in Java typically inject telemetry logic?",
+        "options": {
+            "A": "By requiring developers to modify method signatures",
+            "B": "By using bytecode manipulation via agents (e.g., premain method) at runtime",
+            "C": "By replacing the application's main class",
+            "D": "By integrating with logging frameworks only"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the manual instrumentation lab, what is the role of the TracerProvider?",
+        "options": {
+            "A": "To visualize spans in Jaeger",
+            "B": "To implement the tracing API and manage span processors and exporters",
+            "C": "To generate logs from traces",
+            "D": "To replace the OpenTelemetry Collector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the BatchSpanProcessor in tracing?",
+        "options": {
+            "A": "To process spans synchronously, blocking application execution",
+            "B": "To buffer spans and flush them in batches via a separate thread, improving performance",
+            "C": "To drop all spans that exceed a certain duration",
+            "D": "To convert spans to metrics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the function of ResourceAttributes in OpenTelemetry?",
+        "options": {
+            "A": "To dynamically track request-specific data",
+            "B": "To provide standardized keys for resource metadata (e.g., service name, version)",
+            "C": "To define span durations",
+            "D": "To sample traces based on resource usage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In context propagation, what does the extract() function do?",
+        "options": {
+            "A": "It inserts trace context into outgoing requests",
+            "B": "It extracts trace context (e.g., from HTTP headers) to continue an existing trace",
+            "C": "It deletes trace context from a span",
+            "D": "It generates new trace IDs for incoming requests"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of a Histogram instrument in metrics?",
+        "options": {
+            "A": "To track cumulative values that only increase",
+            "B": "To analyze the distribution of values (e.g., request latency percentiles)",
+            "C": "To measure the current state of a value at a specific time",
+            "D": "To track values that can both increase and decrease"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of Views in OpenTelemetry metrics?",
+        "options": {
+            "A": "To automatically generate dashboards",
+            "B": "To customize metric collection (e.g., adjusting aggregation, filtering attributes)",
+            "C": "To replace metric instruments",
+            "D": "To propagate metric data across services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does OpenTelemetry's Logs Bridge API work?",
+        "options": {
+            "A": "It replaces existing logging libraries with a new implementation",
+            "B": "It connects existing logging solutions with OpenTelemetry, enabling correlation with traces and metrics",
+            "C": "It disables all existing logging to avoid duplication",
+            "D": "It converts logs to a proprietary format"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary focus of the 'Getting Started with OpenTelemetry' course regarding practical implementation?",
+        "options": {
+            "A": "Learning only theoretical concepts of observability without hands-on practice",
+            "B": "Enabling learners to implement OpenTelemetry into existing applications, including automatic and manual instrumentation",
+            "C": "Mastering specific observability backend tools like Grafana",
+            "D": "Developing cloud-native applications from scratch"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which group is NOT listed as a target audience for the course?",
+        "options": {
+            "A": "Software Developers",
+            "B": "Network Engineers specializing in firewall configuration",
+            "C": "Site Reliability Engineers (SREs)",
+            "D": "Full-Stack Developers"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What programming knowledge is recommended as a prerequisite for the course?",
+        "options": {
+            "A": "Advanced knowledge of C++ and Rust",
+            "B": "Basic understanding of programming, preferably with Python and Java",
+            "C": "Expertise in JavaScript and TypeScript",
+            "D": "No programming knowledge required"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the minimum RAM requirement for the recommended local setup of the course labs?",
+        "options": {
+            "A": "2GB",
+            "B": "4GB",
+            "C": "8GB",
+            "D": "16GB"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the end-of-chapter knowledge check questions?",
+        "options": {
+            "A": "To be graded and affect the final course score",
+            "B": "To help comprehend course content and reinforce learning",
+            "C": "To replace the final exam",
+            "D": "To test knowledge of unrelated programming concepts"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to the course, what constitutes the 'workload' in a distributed system?",
+        "options": {
+            "A": "Physical resources like CPU and RAM",
+            "B": "Operations performed to fulfill system objectives, often called transactions",
+            "C": "Software components like containers and pods",
+            "D": "Network bandwidth used by the system"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why did structured logging emerge as a solution?",
+        "options": {
+            "A": "To replace metrics in observability",
+            "B": "To handle unmanageable log volumes by encoding events as key/value pairs for machine readability",
+            "C": "To reduce the need for log aggregation tools",
+            "D": "To simplify human readability without machine processing"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key characteristic of metrics as described in the course?",
+        "options": {
+            "A": "They are append-only records of individual events with timestamps",
+            "B": "They are single numerical values derived by applying statistical measures to groups of events",
+            "C": "They track the flow of requests across distributed services",
+            "D": "They are unstructured and hard to visualize over time"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What problem led to the development of distributed tracing?",
+        "options": {
+            "A": "Inability to generate metrics for microservices",
+            "B": "Difficulty in reconstructing the chain of events across services using traditional logs",
+            "C": "High storage costs of structured logs",
+            "D": "Lack of standardization in metric formats"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the term 'three pillars of observability' refer to?",
+        "options": {
+            "A": "Monitoring, alerting, and deployment",
+            "B": "Logs, metrics, and traces",
+            "C": "APIs, SDKs, and Collectors",
+            "D": "Manual, automatic, and library instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a major challenge of siloed telemetry systems mentioned in the course?",
+        "options": {
+            "A": "They generate too little data for analysis",
+            "B": "They make correlating information across signals difficult, increasing cognitive load",
+            "C": "They are too easy to configure and maintain",
+            "D": "They only work with monolithic applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key goal of OpenTelemetry related to vendor neutrality?",
+        "options": {
+            "A": "To tie users to specific observability vendors",
+            "B": "To enable integration with different backends for processing telemetry data",
+            "C": "To create proprietary data formats for each vendor",
+            "D": "To require vendor-specific instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT something OpenTelemetry aims to be?",
+        "options": {
+            "A": "A data storage solution for telemetry",
+            "B": "A vendor-neutral framework for telemetry",
+            "C": "A cross-platform solution supporting multiple languages",
+            "D": "A tool for standardizing telemetry collection"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the OpenTelemetry Signal Specification?",
+        "options": {
+            "A": "To define language-specific SDK implementations",
+            "B": "To provide a language-agnostic standard for telemetry signals ensuring consistency",
+            "C": "To replace the need for instrumentation libraries",
+            "D": "To specify how telemetry is visualized in dashboards"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why is the separation of API and SDK important in OpenTelemetry?",
+        "options": {
+            "A": "It makes instrumentation more complex for developers",
+            "B": "It allows open-source libraries to include lightweight API dependencies without heavy SDKs",
+            "C": "It limits telemetry to specific programming languages",
+            "D": "It requires re-instrumentation when SDKs are updated"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of the OpenTelemetry Collector in telemetry pipelines?",
+        "options": {
+            "A": "To generate telemetry data from applications",
+            "B": "To receive, process, and export telemetry data to various backends",
+            "C": "To replace application instrumentation",
+            "D": "To visualize telemetry data in dashboards"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which transport mechanisms does OTLP support according to the course?",
+        "options": {
+            "A": "HTTP/1.1, HTTP/2, and gRPC",
+            "B": "Only TCP",
+            "C": "FTP and SMTP",
+            "D": "UDP only"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "In the 'Hands-on Lab: OpenTelemetry in Action', what is the sample application's main functionality?",
+        "options": {
+            "A": "A real-time chat application",
+            "B": "A simple ToDo list with Java and Python components",
+            "C": "An e-commerce platform",
+            "D": "A database management system"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How is the sample application's telemetry data exported to Jaeger and Prometheus in the lab?",
+        "options": {
+            "A": "Directly from the application without a collector",
+            "B": "Via the OpenTelemetry Collector",
+            "C": "Using custom bash scripts",
+            "D": "Through Kubernetes operators"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What happens when you submit an item named 'fail' in the sample application lab?",
+        "options": {
+            "A": "The application crashes and stops running",
+            "B": "A RuntimeException is thrown, visible as an error in Jaeger traces",
+            "C": "No telemetry data is generated for the request",
+            "D": "The item is stored successfully without issues"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is automatic instrumentation (zero-code) in OpenTelemetry?",
+        "options": {
+            "A": "Instrumentation requiring manual code changes to every method",
+            "B": "Instrumentation using agents or plugins to collect telemetry without modifying source code",
+            "C": "Instrumentation limited to Python applications only",
+            "D": "Instrumentation that replaces the application's runtime"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a challenge of instrumentation libraries mentioned in the course?",
+        "options": {
+            "A": "They require no additional dependencies",
+            "B": "They may introduce dependency management complexities and limited community support",
+            "C": "They work seamlessly with all framework versions",
+            "D": "They eliminate the need for any manual instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does automatic instrumentation in Java typically work?",
+        "options": {
+            "A": "By requiring developers to add @WithSpan annotations to methods",
+            "B": "By using bytecode manipulation via Java agents (e.g., premain method) at runtime",
+            "C": "By modifying the application's source code during compilation",
+            "D": "By integrating with the JVM's garbage collector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the @WithSpan annotation in Java instrumentation?",
+        "options": {
+            "A": "To disable instrumentation for a specific method",
+            "B": "To mark a method for tracing, making it visible as a span in traces",
+            "C": "To convert the method's output to a metric",
+            "D": "To automatically log all method parameters"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In manual tracing instrumentation, what does tracer.start_as_current_span() do?",
+        "options": {
+            "A": "Stops the current span and starts a new independent trace",
+            "B": "Creates a new span, attaches it to the current context, and ends it when the context exits",
+            "C": "Exports all spans to the Collector immediately",
+            "D": "Samples a span based on predefined rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of resource attributes in telemetry?",
+        "options": {
+            "A": "To track dynamic values that change with each request",
+            "B": "To provide static metadata about the telemetry source (e.g., service name, version)",
+            "C": "To define the span duration",
+            "D": "To sample traces based on resource usage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the function of the inject() method in context propagation?",
+        "options": {
+            "A": "To extract trace context from incoming requests",
+            "B": "To insert trace context (e.g., traceparent header) into outgoing requests",
+            "C": "To delete trace context from a span",
+            "D": "To generate new trace IDs for outgoing requests"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type is used to track values that can both increase and decrease (e.g., active connections)?",
+        "options": {
+            "A": "Counter",
+            "B": "UpDownCounter",
+            "C": "Gauge",
+            "D": "Histogram"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of Views in OpenTelemetry metrics?",
+        "options": {
+            "A": "To automatically generate Grafana dashboards",
+            "B": "To customize how metrics are collected (e.g., adjusting aggregation, filtering attributes)",
+            "C": "To replace metric instruments",
+            "D": "To propagate metric data across services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does OpenTelemetry integrate with existing logging solutions?",
+        "options": {
+            "A": "By replacing them with a new logging framework",
+            "B": "By using a Logs Bridge API to connect existing libraries with OpenTelemetry telemetry",
+            "C": "By disabling all existing logs to avoid duplication",
+            "D": "By converting logs to a proprietary format"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What information in OpenTelemetry logs helps correlate them with traces?",
+        "options": {
+            "A": "Metric values embedded in logs",
+            "B": "Trace ID and Span ID fields in log entries",
+            "C": "The service name alone",
+            "D": "The log timestamp matching trace start time"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main goal of the 'Getting Started with OpenTelemetry' course in terms of practical skills?",
+        "options": {
+            "A": "To master specific cloud platform deployment",
+            "B": "To enable learners to implement OpenTelemetry into existing apps, including auto and manual instrumentation",
+            "C": "To focus on designing microservices architectures",
+            "D": "To replace all existing monitoring tools"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a stated learning objective of the course?",
+        "options": {
+            "A": "Explain basics of OpenTelemetry and its role in observability",
+            "B": "Design proprietary telemetry formats",
+            "C": "Manually instrument code to generate traces, metrics, and logs",
+            "D": "Discuss the OpenTelemetry Collector and Connector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How much time is recommended to complete the course?",
+        "options": {
+            "A": "3-5 hours",
+            "B": "8-10 hours",
+            "C": "15-20 hours",
+            "D": "25-30 hours"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the access period for the course after registration?",
+        "options": {
+            "A": "3 months",
+            "B": "6 months",
+            "C": "12 months",
+            "D": "24 months"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who is the course NOT designed for, according to the document?",
+        "options": {
+            "A": "Software Developers",
+            "B": "DevOps Engineers",
+            "C": "Network Security Analysts",
+            "D": "Site Reliability Engineers (SREs)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What programming knowledge is a prerequisite for the course?",
+        "options": {
+            "A": "Advanced C# expertise",
+            "B": "Basic understanding, preferably with Python and Java",
+            "C": "Expertise in Ruby on Rails",
+            "D": "No programming knowledge needed"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a required system component for the recommended local setup?",
+        "options": {
+            "A": "VirtualBox",
+            "B": "Docker",
+            "C": "AWS CLI",
+            "D": "Jenkins"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the estimated hard disk space required for the course setup?",
+        "options": {
+            "A": "2GB",
+            "B": "5GB",
+            "C": "15GB",
+            "D": "30GB"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What constitutes 'workload' in a distributed system, per the course?",
+        "options": {
+            "A": "Physical server resources",
+            "B": "Operations to fulfill objectives, e.g., processing user requests",
+            "C": "Software like load balancers",
+            "D": "Network bandwidth"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key feature of structured logging?",
+        "options": {
+            "A": "Human-readable only",
+            "B": "Encoded as key/value pairs for machine readability",
+            "C": "Stored locally on each machine",
+            "D": "Replaces metrics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How do metrics differ from logs, according to the course?",
+        "options": {
+            "A": "Metrics are individual events; logs are aggregates",
+            "B": "Metrics are numerical aggregates; logs are event records",
+            "C": "Metrics are unstructured; logs are structured",
+            "D": "Metrics are append-only; logs are overwritten"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why was distributed tracing developed?",
+        "options": {
+            "A": "To replace metrics",
+            "B": "To address debugging challenges in distributed systems with traditional logs",
+            "C": "To reduce log storage costs",
+            "D": "To simplify microservice deployment"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What are the 'three pillars of observability'?",
+        "options": {
+            "A": "Monitoring, alerting, deployment",
+            "B": "Logs, metrics, traces",
+            "C": "APIs, SDKs, Collectors",
+            "D": "Manual, auto, library instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a problem with siloed telemetry systems?",
+        "options": {
+            "A": "Too little data",
+            "B": "Hard to correlate across signals, increasing cognitive load",
+            "C": "Too easy to maintain",
+            "D": "Only work with monoliths"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key goal of OpenTelemetry?",
+        "options": {
+            "A": "Vendor lock-in",
+            "B": "Unified telemetry (traces, metrics, logs) with open standards",
+            "C": "Replace all observability tools",
+            "D": "Proprietary data formats"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is OpenTelemetry NOT, per the course?",
+        "options": {
+            "A": "An all-in-one monitoring tool",
+            "B": "Vendor-neutral",
+            "C": "Cross-platform",
+            "D": "A telemetry standardization tool"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the Signal Specification?",
+        "options": {
+            "A": "Language-specific SDKs",
+            "B": "Language-agnostic consistency for telemetry signals",
+            "C": "Replace instrumentation libraries",
+            "D": "Dashboard visualization rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why separate API and SDK in OpenTelemetry?",
+        "options": {
+            "A": "Increase complexity",
+            "B": "Allow lightweight API dependencies without heavy SDKs",
+            "C": "Limit to specific languages",
+            "D": "Force re-instrumentation on updates"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the OpenTelemetry Collector do?",
+        "options": {
+            "A": "Generate telemetry from apps",
+            "B": "Receive, process, export telemetry to backends",
+            "C": "Replace app instrumentation",
+            "D": "Visualize data"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What encoding formats does OTLP support?",
+        "options": {
+            "A": "JSON only",
+            "B": "Protobuf and JSON",
+            "C": "XML and CSV",
+            "D": "YAML"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is automatic instrumentation?",
+        "options": {
+            "A": "Requires manual code changes",
+            "B": "Uses agents to instrument without code changes",
+            "C": "Limited to Python",
+            "D": "Replaces runtime"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a challenge of instrumentation libraries?",
+        "options": {
+            "A": "No dependencies",
+            "B": "May introduce dependency issues and limited support",
+            "C": "Work with all frameworks",
+            "D": "Eliminate manual instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does Java auto-instrumentation work?",
+        "options": {
+            "A": "Manual annotations",
+            "B": "Bytecode manipulation via agents (e.g., premain)",
+            "C": "Source code modification",
+            "D": "Garbage collector integration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does @WithSpan do in Java?",
+        "options": {
+            "A": "Disables instrumentation",
+            "B": "Marks a method for tracing as a span",
+            "C": "Converts to metric",
+            "D": "Logs parameters"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does tracer.start_as_current_span() do in manual tracing?",
+        "options": {
+            "A": "Stops current span",
+            "B": "Creates a span, attaches to context, ends on exit",
+            "C": "Exports spans immediately",
+            "D": "Samples spans"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What are resource attributes used for?",
+        "options": {
+            "A": "Dynamic request data",
+            "B": "Static metadata (e.g., service name, version)",
+            "C": "Span duration",
+            "D": "Trace sampling"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does inject() do in context propagation?",
+        "options": {
+            "A": "Extracts trace context",
+            "B": "Inserts trace context into outgoing requests",
+            "C": "Deletes context",
+            "D": "Generates new trace IDs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type tracks values that increase and decrease?",
+        "options": {
+            "A": "Counter",
+            "B": "UpDownCounter",
+            "C": "Gauge",
+            "D": "Histogram"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of Views in metrics?",
+        "options": {
+            "A": "Dashboard generation",
+            "B": "Customize collection (e.g., aggregation, filtering)",
+            "C": "Replace instruments",
+            "D": "Propagate metrics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does OpenTelemetry integrate with existing logging?",
+        "options": {
+            "A": "Replaces logging libraries",
+            "B": "Uses Logs Bridge API to connect with OpenTelemetry",
+            "C": "Disables existing logs",
+            "D": "Converts to proprietary format"
+        },
+        "answer": "B"
+    }
+]
