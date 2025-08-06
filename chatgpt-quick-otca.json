@@ -1,0 +1,542 @@
+[
+  {
+    "question": "What is the primary goal of observability in modern distributed systems?",
+    "options": {
+      "A": "To monitor CPU and memory usage only",
+      "B": "To understand the internal state of a system from its outputs",
+      "C": "To replace logging with metrics",
+      "D": "To create dashboards for operations teams"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is NOT one of the three pillars of observability?",
+    "options": {
+      "A": "Logs",
+      "B": "Metrics",
+      "C": "Traces",
+      "D": "Events"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "What OpenTelemetry component is responsible for collecting telemetry data from applications?",
+    "options": {
+      "A": "Collector",
+      "B": "Exporter",
+      "C": "Instrumentation Library",
+      "D": "Receiver"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which OpenTelemetry concept represents a single operation within a trace?",
+    "options": {
+      "A": "Metric",
+      "B": "Log",
+      "C": "Span",
+      "D": "Export"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which OpenTelemetry Collector component is responsible for sending data to a backend?",
+    "options": {
+      "A": "Processor",
+      "B": "Receiver",
+      "C": "Exporter",
+      "D": "Pipeline"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which of these is a supported OpenTelemetry signal?",
+    "options": {
+      "A": "Alarms",
+      "B": "Metrics",
+      "C": "Snapshots",
+      "D": "Configurations"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which format does OpenTelemetry use to represent trace context across services?",
+    "options": {
+      "A": "XML",
+      "B": "W3C Trace Context",
+      "C": "SNMP",
+      "D": "Syslog"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "In the OpenTelemetry Collector, what is the role of a processor?",
+    "options": {
+      "A": "It adds additional metadata to telemetry data",
+      "B": "It stores telemetry data in a database",
+      "C": "It visualizes telemetry data",
+      "D": "It deletes telemetry data"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which of these languages is NOT officially supported for OpenTelemetry instrumentation?",
+    "options": {
+      "A": "Go",
+      "B": "Java",
+      "C": "Python",
+      "D": "COBOL"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "Which OpenTelemetry signal is most useful for identifying performance bottlenecks in distributed systems?",
+    "options": {
+      "A": "Logs",
+      "B": "Metrics",
+      "C": "Traces",
+      "D": "Events"
+    },
+    "answer": "C"
+  }, 
+  {
+    "question": "Which processor would you use in an OpenTelemetry Collector to batch telemetry data before exporting?",
+    "options": {
+      "A": "Memory limiter processor",
+      "B": "Batch processor",
+      "C": "Resampler processor",
+      "D": "Sampling processor"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "What is the advantage of using semantic conventions in OpenTelemetry?",
+    "options": {
+      "A": "They improve performance",
+      "B": "They standardize attribute naming and usage",
+      "C": "They are required by all programming languages",
+      "D": "They reduce trace size"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which exporter is used to send telemetry data to Prometheus?",
+    "options": {
+      "A": "prometheusreceiver",
+      "B": "prometheusexporter",
+      "C": "otlp exporter",
+      "D": "jaeger exporter"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following best describes the OTLP protocol?",
+    "options": {
+      "A": "A proprietary format used by OpenTelemetry",
+      "B": "A text-based protocol for exporting logs",
+      "C": "A gRPC and HTTP-based protocol for telemetry data",
+      "D": "A legacy protocol for SNMP traps"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What is the purpose of an OpenTelemetry Resource?",
+    "options": {
+      "A": "It stores metric time series",
+      "B": "It defines attributes about the entity producing telemetry",
+      "C": "It filters out unused spans",
+      "D": "It exports logs to the backend"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is a core benefit of using the OpenTelemetry Collector?",
+    "options": {
+      "A": "It replaces all other monitoring tools",
+      "B": "It provides a unified way to receive, process, and export telemetry data",
+      "C": "It compiles code for observability",
+      "D": "It stores telemetry data in the cloud"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which OpenTelemetry component is responsible for converting telemetry data into a backend-compatible format?",
+    "options": {
+      "A": "Receiver",
+      "B": "Instrumentation Library",
+      "C": "Exporter",
+      "D": "Processor"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What does the term 'sampling' refer to in the context of tracing?",
+    "options": {
+      "A": "Reducing the resolution of metric data",
+      "B": "Selecting a subset of spans to record and export",
+      "C": "Filtering logs based on severity",
+      "D": "Measuring CPU usage"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "What component is responsible for receiving telemetry data in the OpenTelemetry Collector?",
+    "options": {
+      "A": "Receiver",
+      "B": "Processor",
+      "C": "Exporter",
+      "D": "Observer"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which of the following is a valid trace context propagation format?",
+    "options": {
+      "A": "W3C Trace Context",
+      "B": "TCP/IP",
+      "C": "JSON-RPC",
+      "D": "gRPC"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which OpenTelemetry library is used to collect application-level signals?",
+    "options": {
+      "A": "Collector",
+      "B": "Instrumentation Library",
+      "C": "Processor",
+      "D": "Exporter"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which component in the OpenTelemetry Collector is used to transform data before exporting?",
+    "options": {
+      "A": "Receiver",
+      "B": "Exporter",
+      "C": "Processor",
+      "D": "Instrumenter"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What is the term for a complete trace of a user request across multiple services?",
+    "options": {
+      "A": "Span",
+      "B": "Trace",
+      "C": "Metric",
+      "D": "Log"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which OpenTelemetry Collector component supports Prometheus scraping?",
+    "options": {
+      "A": "prometheusreceiver",
+      "B": "prometheusexporter",
+      "C": "otlpreceiver",
+      "D": "metricsreceiver"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which of the following best describes a span in tracing?",
+    "options": {
+      "A": "A performance graph",
+      "B": "A single unit of work within a trace",
+      "C": "A collection of metrics",
+      "D": "A data packet sent over the network"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "What is the OpenTelemetry default context propagation format?",
+    "options": {
+      "A": "B3",
+      "B": "Jaeger",
+      "C": "W3C Trace Context",
+      "D": "Zipkin"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which exporter should be used to send traces to Jaeger?",
+    "options": {
+      "A": "jaegerexporter",
+      "B": "prometheusexporter",
+      "C": "otlpexporter",
+      "D": "loggingexporter"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which signal in OpenTelemetry is best suited for real-time alerting?",
+    "options": {
+      "A": "Traces",
+      "B": "Logs",
+      "C": "Metrics",
+      "D": "Events"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "How does OpenTelemetry handle multi-language applications?",
+    "options": {
+      "A": "It only supports Java",
+      "B": "It requires rewriting code in Go",
+      "C": "It provides SDKs for multiple languages",
+      "D": "It uses a single global binary"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following is a valid pipeline component in the OpenTelemetry Collector?",
+    "options": {
+      "A": "Logger",
+      "B": "Monitor",
+      "C": "Receiver",
+      "D": "Inspector"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following would be considered a high-cardinality metric label?",
+    "options": {
+      "A": "HTTP method",
+      "B": "Status code",
+      "C": "User ID",
+      "D": "Service name"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What should you use to define metadata such as service name or version?",
+    "options": {
+      "A": "Span",
+      "B": "Resource",
+      "C": "Exporter",
+      "D": "Processor"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is a pull-based receiver in the OpenTelemetry Collector?",
+    "options": {
+      "A": "otlp",
+      "B": "prometheus",
+      "C": "jaeger",
+      "D": "zipkin"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which language SDK supports auto-instrumentation using agents?",
+    "options": {
+      "A": "Java",
+      "B": "Go",
+      "C": "Rust",
+      "D": "C++"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "What is the main function of the OpenTelemetry Collector's processor?",
+    "options": {
+      "A": "Receiving telemetry data",
+      "B": "Exporting telemetry data",
+      "C": "Modifying or enhancing telemetry data",
+      "D": "Visualizing telemetry data"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which protocol is commonly used for OTLP-based communication?",
+    "options": {
+      "A": "FTP",
+      "B": "SMTP",
+      "C": "gRPC",
+      "D": "SSH"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following tools is often used to visualize trace data?",
+    "options": {
+      "A": "Grafana",
+      "B": "MySQL",
+      "C": "cURL",
+      "D": "systemd"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which OpenTelemetry component is responsible for providing consistent attribute names?",
+    "options": {
+      "A": "Semantic conventions",
+      "B": "Exporters",
+      "C": "Processors",
+      "D": "Receivers"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which of the following is an example of a metric?",
+    "options": {
+      "A": "Span duration",
+      "B": "Log message",
+      "C": "CPU utilization",
+      "D": "Exception stack trace"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which span attribute would help identify the HTTP status code of a request?",
+    "options": {
+      "A": "http.method",
+      "B": "http.status_code",
+      "C": "db.statement",
+      "D": "net.peer.name"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Why is it important to avoid high-cardinality label values in metrics?",
+    "options": {
+      "A": "They are hard to read",
+      "B": "They require more CPU to compute",
+      "C": "They increase backend storage and processing load",
+      "D": "They slow down network transmission"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What would be a good use case for logs in observability?",
+    "options": {
+      "A": "Tracking CPU usage over time",
+      "B": "Diagnosing specific error messages",
+      "C": "Measuring request latency",
+      "D": "Counting HTTP requests"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is NOT a supported export format in OpenTelemetry?",
+    "options": {
+      "A": "OTLP",
+      "B": "Jaeger",
+      "C": "Prometheus",
+      "D": "SNMP"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "What is the role of the 'service.name' attribute in OpenTelemetry?",
+    "options": {
+      "A": "To describe the method name",
+      "B": "To identify the database used",
+      "C": "To specify the application emitting telemetry",
+      "D": "To define the trace ID"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following is the best reason to use the OpenTelemetry Collector?",
+    "options": {
+      "A": "It stores telemetry data indefinitely",
+      "B": "It provides vendor-agnostic telemetry pipelines",
+      "C": "It is required for logs only",
+      "D": "It replaces all SDKs"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which OpenTelemetry signal is best for understanding high-level system behavior over time?",
+    "options": {
+      "A": "Logs",
+      "B": "Metrics",
+      "C": "Traces",
+      "D": "Packets"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is a common OpenTelemetry trace exporter?",
+    "options": {
+      "A": "Zipkin",
+      "B": "Redis",
+      "C": "Kafka",
+      "D": "PostgreSQL"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which signal is typically used for root cause analysis in OpenTelemetry?",
+    "options": {
+      "A": "Metrics",
+      "B": "Traces",
+      "C": "Logs",
+      "D": "Profiles"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which processor would you use to reduce the volume of trace data?",
+    "options": {
+      "A": "Batch processor",
+      "B": "Memory limiter processor",
+      "C": "Sampling processor",
+      "D": "Resample processor"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What does a span context usually include?",
+    "options": {
+      "A": "Trace ID and Span ID",
+      "B": "Only the service name",
+      "C": "HTTP headers",
+      "D": "Database name"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "What is the best practice for naming spans?",
+    "options": {
+      "A": "Use random strings",
+      "B": "Use the span ID",
+      "C": "Use a low-cardinality operation name",
+      "D": "Use the full stack trace"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which language SDK provides support for OpenTelemetry metrics, traces, and logs?",
+    "options": {
+      "A": "PHP",
+      "B": "Java",
+      "C": "COBOL",
+      "D": "Shell"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "What is the purpose of attributes in a span?",
+    "options": {
+      "A": "To define the visualization style",
+      "B": "To annotate the span with contextual information",
+      "C": "To link spans across processes",
+      "D": "To export metrics"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is a benefit of using OpenTelemetry?",
+    "options": {
+      "A": "It replaces all log management systems",
+      "B": "It standardizes observability instrumentation",
+      "C": "It runs only on Linux",
+      "D": "It requires no configuration"
+    },
+    "answer": "B"
+  }
+]
