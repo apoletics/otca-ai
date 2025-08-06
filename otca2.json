@@ -1,0 +1,1202 @@
+[
+    {
+        "question": "What is the primary purpose of OpenTelemetry's semantic conventions?",
+        "options": {
+            "A": "Define hierarchical relationships between spans",
+            "B": "Standardize attribute names and data formats across services",
+            "C": "Optimize telemetry data storage costs",
+            "D": "Enable real-time log analysis"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component is responsible for receiving, processing, and exporting telemetry data in the OpenTelemetry Collector?",
+        "options": {
+            "A": "Agent",
+            "B": "Pipeline (Receiver → Processor → Exporter)",
+            "C": "SDK",
+            "D": "OTLP Gateway"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key limitation of traditional logging in distributed systems?",
+        "options": {
+            "A": "Lack of correlation with traces/metrics",
+            "B": "Inability to store timestamps",
+            "C": "Native support for OTLP",
+            "D": "Overhead from manual instrumentation"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which OpenTelemetry signal captures a timeline of events with structured metadata?",
+        "options": {
+            "A": "Traces",
+            "B": "Metrics",
+            "C": "Logs",
+            "D": "Baggage"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of span links in OpenTelemetry?",
+        "options": {
+            "A": "Establish parent-child relationships",
+            "B": "Associate causally related spans without direct hierarchy",
+            "C": "Define sampling priorities",
+            "D": "Track error propagation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component enables automatic instrumentation of third-party libraries?",
+        "options": {
+            "A": "OTel Collector",
+            "B": "Instrumentation Contrib",
+            "C": "Semantic Conventions",
+            "D": "Context Propagator"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does OTLP (OpenTelemetry Protocol) primarily enable?",
+        "options": {
+            "A": "Language-specific SDK configuration",
+            "B": "Vendor-agnostic telemetry data transmission",
+            "C": "Agent-side sampling",
+            "D": "Log file parsing"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which deployment mode places the Collector as a sidecar in Kubernetes pods?",
+        "options": {
+            "A": "Gateway",
+            "B": "Agent",
+            "C": "Standalone",
+            "D": "In-process"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the core purpose of OpenTelemetry's context propagation?",
+        "options": {
+            "A": "Ensure end-to-end trace correlation",
+            "B": "Compress telemetry data",
+            "C": "Authenticate collector endpoints",
+            "D": "Generate metrics snapshots"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exam domain covers error handling and schema management in observability pipelines?",
+        "options": {
+            "A": "Fundamentals of Observability",
+            "B": "OTel API/SDK",
+            "C": "Collector",
+            "D": "Maintaining/Debugging Pipelines"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What defines the standard attributes for database operations (e.g., db.system=postgresql)?",
+        "options": {
+            "A": "Semantic Conventions",
+            "B": "Span Links",
+            "C": "Baggage Items",
+            "D": "Processor Rules"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which component handles data transformation (e.g., renaming attributes) in the Collector?",
+        "options": {
+            "A": "Receiver",
+            "B": "Processor",
+            "C": "Exporter",
+            "D": "Agent"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the recommended approach for instrumenting cloud-native applications?",
+        "options": {
+            "A": "Manual logging only",
+            "B": "Automatic instrumentation + manual enrichment",
+            "C": "Agent-only collection",
+            "D": "Vendor-specific SDKs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which signal uses a hierarchical span structure for distributed tracing?",
+        "options": {
+            "A": "Metrics",
+            "B": "Traces",
+            "C": "Logs",
+            "D": "Events"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key benefit of OTel's composable SDK pipelines?",
+        "options": {
+            "A": "Fixed sampling rates",
+            "B": "Vendor lock-in prevention",
+            "C": "Single-process deployment",
+            "D": "Reduced log volume"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which exam domain占比最高 (46%)?",
+        "options": {
+            "A": "Fundamentals of Observability",
+            "B": "OTel API/SDK",
+            "C": "Collector",
+            "D": "Pipeline Maintenance"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What enables cross-service context propagation in OTel?",
+        "options": {
+            "A": "Baggage",
+            "B": "Propagators",
+            "C": "Spans",
+            "D": "Metrics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which scenario requires span events in telemetry data?",
+        "options": {
+            "A": "High-level performance metrics",
+            "B": "Detailed error context within a span",
+            "C": "Sampling decisions",
+            "D": "Agent configuration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary use case for the OTel Collector's 'dropper' processor?",
+        "options": {
+            "A": "Reduce data volume for testing",
+            "B": "Enforce authentication",
+            "C": "Add metadata to spans",
+            "D": "Route data to multiple exporters"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which OpenTelemetry component is language-agnostic?",
+        "options": {
+            "A": "SDK",
+            "B": "Collector",
+            "C": "Instrumentation",
+            "D": "API"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What defines the 'complete observability' principle?",
+        "options": {
+            "A": "Only metrics and traces",
+            "B": "Metrics, logs, and traces",
+            "C": "Agent-side processing only",
+            "D": "Vendor-specific dashboards"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which attribute is an example of cloud-specific telemetry?",
+        "options": {
+            "A": "http.status_code",
+            "B": "db.query_time",
+            "C": "cloud.region",
+            "D": "process.pid"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of the OTel SDK's 'shutdown' method?",
+        "options": {
+            "A": "Terminate the application",
+            "B": "Flush pending telemetry data",
+            "C": "Restart the collector",
+            "D": "Enable debug mode"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component handles OTel protocol conversion (e.g., Jaeger Thrift to OTLP)?",
+        "options": {
+            "A": "Receiver",
+            "B": "Processor",
+            "C": "Exporter",
+            "D": "SDK"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is a best practice for instrumenting sensitive data?",
+        "options": {
+            "A": "Include PII in span attributes",
+            "B": "Use baggage for sensitive metadata",
+            "C": "Redact/filter sensitive attributes",
+            "D": "Store logs in public exporters"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which exam topic covers 'schema management'?",
+        "options": {
+            "A": "Fundamentals of Observability",
+            "B": "OTel API/SDK",
+            "C": "Collector",
+            "D": "Pipeline Maintenance"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What does the 'otelcol' command refer to?",
+        "options": {
+            "A": "OTel Collector binary",
+            "B": "SDK configuration file",
+            "C": "Semantic conventions document",
+            "D": "Exam preparation tool"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which signal uses time-series data with labels?",
+        "options": {
+            "A": "Traces",
+            "B": "Metrics",
+            "C": "Logs",
+            "D": "Spans"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the recommended approach for debugging OTel pipelines?",
+        "options": {
+            "A": "Disable all processors",
+            "B": "Use debug-level logging and sampling",
+            "C": "Increase exporter batch size",
+            "D": "Remove all attributes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry concept aligns with control theory's 'infer internal state from external outputs'?",
+        "options": {
+            "A": "Observability",
+            "B": "Instrumentation",
+            "C": "Sampling",
+            "D": "Context"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What distinguishes observability from monitoring in OpenTelemetry?",
+        "options": {
+            "A": "Monitoring uses only logs",
+            "B": "Observability focuses on deriving insights from telemetry data",
+            "C": "Monitoring requires OTLP protocol",
+            "D": "Observability is vendor-specific"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which element of the OpenTelemetry data model represents a single operation in a distributed trace?",
+        "options": {
+            "A": "Metric",
+            "B": "Log",
+            "C": "Span",
+            "D": "Baggage"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the primary role of a sampler in the OpenTelemetry SDK?",
+        "options": {
+            "A": "Transforming telemetry data attributes",
+            "B": "Deciding which traces to record and export",
+            "C": "Authenticating with the Collector",
+            "D": "Propagating context across services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry Collector component is responsible for sending data to a Prometheus backend?",
+        "options": {
+            "A": "OTLP receiver",
+            "B": "Prometheus exporter",
+            "C": "Metric processor",
+            "D": "Span filter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of semantic conventions for database spans?",
+        "options": {
+            "A": "Optimize database query performance",
+            "B": "Standardize attributes like db.system and db.statement",
+            "C": "Configure Collector database receivers",
+            "D": "Define database authentication rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component of the OpenTelemetry SDK handles batching of telemetry data before export?",
+        "options": {
+            "A": "Sampler",
+            "B": "Exporter",
+            "C": "SDK processor",
+            "D": "Propagator"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "In OpenTelemetry, what does the term 'signal' specifically refer to?",
+        "options": {
+            "A": "A network protocol for telemetry transmission",
+            "B": "A type of telemetry data (traces, metrics, logs)",
+            "C": "A Collector deployment configuration",
+            "D": "A debugging tool for pipelines"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry Collector deployment mode is optimal for aggregating telemetry from multiple services?",
+        "options": {
+            "A": "Sidecar agent",
+            "B": "Gateway",
+            "C": "In-process SDK",
+            "D": "Per-service daemon"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary function of baggage in OpenTelemetry?",
+        "options": {
+            "A": "Storing trace ID and span ID for propagation",
+            "B": "Carrying user-defined metadata across distributed spans",
+            "C": "Filtering sensitive metrics from export",
+            "D": "Configuring Collector pipeline rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which section of the Collector configuration specifies data sources like Jaeger or Zipkin?",
+        "options": {
+            "A": "Processors",
+            "B": "Exporters",
+            "C": "Receivers",
+            "D": "Pipelines"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a key advantage of automatic instrumentation over manual instrumentation?",
+        "options": {
+            "A": "More granular control over span attributes",
+            "B": "Reduced effort for instrumenting third-party libraries",
+            "C": "Lower telemetry data volume",
+            "D": "Tighter integration with a single backend"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In OpenTelemetry metrics, what is an 'instrument'?",
+        "options": {
+            "A": "A tool for debugging metric pipelines",
+            "B": "A component that generates metric data (e.g., counter, histogram)",
+            "C": "A type of structured log associated with metrics",
+            "D": "A Collector processor for metric aggregation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which exam domain covers 'scaling' of the OpenTelemetry Collector?",
+        "options": {
+            "A": "Fundamentals of Observability",
+            "B": "The OpenTelemetry API and SDK",
+            "C": "The OpenTelemetry Collector",
+            "D": "Maintaining and Debugging Observability Pipelines"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the core purpose of 'context' in OpenTelemetry?",
+        "options": {
+            "A": "Storing application configuration settings",
+            "B": "Carrying trace and baggage data across distributed systems",
+            "C": "Defining threshold values for metrics",
+            "D": "Logging error details from instrumented code"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry Collector processor is used to add or modify telemetry attributes?",
+        "options": {
+            "A": "Filter processor",
+            "B": "Attribute processor",
+            "C": "Dropper processor",
+            "D": "Batch processor"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the default protocol used by OpenTelemetry SDKs for data export?",
+        "options": {
+            "A": "HTTP/JSON",
+            "B": "OTLP (OpenTelemetry Protocol)",
+            "C": "gRPC",
+            "D": "Jaeger Thrift"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which concept ensures trace continuity when requests move between services in a distributed system?",
+        "options": {
+            "A": "Sampling",
+            "B": "Context propagation",
+            "C": "Metric aggregation",
+            "D": "Log parsing"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How long is the OTCA certification valid after earning it?",
+        "options": {
+            "A": "1 year",
+            "B": "2 years",
+            "C": "3 years",
+            "D": "Lifetime"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which part of the OpenTelemetry SDK configures exporters, processors, and samplers?",
+        "options": {
+            "A": "Tracer provider",
+            "B": "Meter provider",
+            "C": "SDK builder",
+            "D": "Context manager"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What distinguishes the 'OTel Collector Contrib' distribution from the core distribution?",
+        "options": {
+            "A": "It contains only essential components",
+            "B": "It includes additional receivers, processors, and exporters",
+            "C": "It is deprecated and no longer maintained",
+            "D": "It requires a commercial license"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which signal is most appropriate for tracking the average response time of an API over 5-minute intervals?",
+        "options": {
+            "A": "Traces",
+            "B": "Metrics",
+            "C": "Logs",
+            "D": "Baggage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does 'composability' of the OpenTelemetry SDK refer to?",
+        "options": {
+            "A": "The ability to combine multiple SDKs in a single application",
+            "B": "Flexibility to mix and match components (samplers, processors, exporters)",
+            "C": "Compatibility with only one telemetry backend",
+            "D": "Fixed, non-configurable pipeline structures"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which topic under 'Fundamentals of Observability' covers types of telemetry data?",
+        "options": {
+            "A": "Semantic Conventions",
+            "B": "Telemetry Data",
+            "C": "Instrumentation",
+            "D": "Analysis and Outcomes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the 'health check' extension in the OpenTelemetry Collector?",
+        "options": {
+            "A": "Monitor the Collector's own operational status",
+            "B": "Validate the health of instrumented applications",
+            "C": "Check telemetry data for schema compliance",
+            "D": "Configure sampling rates dynamically"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which type of span typically represents an incoming HTTP request in a service?",
+        "options": {
+            "A": "Client span",
+            "B": "Server span",
+            "C": "Producer span",
+            "D": "Consumer span"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the duration of the OTCA exam?",
+        "options": {
+            "A": "60 minutes",
+            "B": "90 minutes",
+            "C": "120 minutes",
+            "D": "150 minutes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component generates metric data within an instrumented application?",
+        "options": {
+            "A": "Meter",
+            "B": "Tracer",
+            "C": "Logger",
+            "D": "Collector receiver"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the function of the 'batch' processor in the OpenTelemetry SDK?",
+        "options": {
+            "A": "Split large telemetry batches into smaller chunks",
+            "B": "Combine multiple telemetry items to reduce export overhead",
+            "C": "Drop duplicate spans and metrics",
+            "D": "Convert metrics to log format for unified export"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which part of the Collector pipeline determines the destination of telemetry data (e.g., Loki, Elasticsearch)?",
+        "options": {
+            "A": "Receiver",
+            "B": "Processor",
+            "C": "Exporter",
+            "D": "Extension"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a best practice for maintaining observability pipelines?",
+        "options": {
+            "A": "Disable error handling to reduce performance overhead",
+            "B": "Regularly update to align with new semantic conventions",
+            "C": "Avoid context propagation to simplify traces",
+            "D": "Use a single exporter for all telemetry types"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a core type of telemetry data in OpenTelemetry, as defined in the Fundamentals of Observability domain?",
+        "options": {
+            "A": "Traces",
+            "B": "Metrics",
+            "C": "Events",
+            "D": "Logs"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "In the OpenTelemetry API and SDK domain, what defines the structure of telemetry data (e.g., span fields, metric labels)?",
+        "options": {
+            "A": "Semantic Conventions",
+            "B": "Data Model",
+            "C": "Collector Pipelines",
+            "D": "Schema Management"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component of the OpenTelemetry Collector is configured to receive data from instrumented applications using the OTLP protocol?",
+        "options": {
+            "A": "OTLP Exporter",
+            "B": "OTLP Receiver",
+            "C": "Metric Processor",
+            "D": "Trace Pipeline"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the Maintaining and Debugging domain, what is a common cause of broken context propagation across services?",
+        "options": {
+            "A": "Mismatched sampler configurations",
+            "B": "Missing propagator setup in SDK",
+            "C": "Excessive metric cardinality",
+            "D": "Collector scaling limits"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to the Fundamentals of Observability, what is the purpose of instrumentation?",
+        "options": {
+            "A": "To store telemetry data in backends",
+            "B": "To generate and collect telemetry from applications",
+            "C": "To transform data in the Collector",
+            "D": "To debug pipeline errors"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the OpenTelemetry API and SDK, what allows developers to customize SDK behavior by adding custom processors or exporters?",
+        "options": {
+            "A": "Composability and Extension",
+            "B": "Semantic Conventions",
+            "C": "Collector Scaling",
+            "D": "Schema Management"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Collector deployment strategy is suitable for high-traffic environments requiring centralized telemetry aggregation?",
+        "options": {
+            "A": "Sidecar agent per pod",
+            "B": "Gateway mode",
+            "C": "In-process SDK",
+            "D": "Standalone per host"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a key activity in 'schema management' within the Maintenance domain?",
+        "options": {
+            "A": "Updating telemetry attribute names to match new schema versions",
+            "B": "Increasing Collector replica count",
+            "C": "Configuring SDK samplers",
+            "D": "Enabling automatic instrumentation"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "In the Fundamentals domain, how do semantic conventions improve telemetry analysis?",
+        "options": {
+            "A": "By reducing data volume",
+            "B": "By standardizing attribute names for consistent querying",
+            "C": "By accelerating Collector deployment",
+            "D": "By enabling manual instrumentation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which signal in the OpenTelemetry API and SDK is used to measure discrete events (e.g., number of requests) with a non-decreasing value?",
+        "options": {
+            "A": "Gauge metric",
+            "B": "Counter metric",
+            "C": "Span event",
+            "D": "Log entry"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the effect of scaling the OpenTelemetry Collector horizontally?",
+        "options": {
+            "A": "Reduced telemetry latency",
+            "B": "Increased capacity to handle higher data volumes",
+            "C": "Simplified pipeline configuration",
+            "D": "Lower memory usage per instance"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In debugging observability pipelines, what tool helps identify where telemetry data is dropped?",
+        "options": {
+            "A": "Collector debug logs",
+            "B": "Span links",
+            "C": "Metric instruments",
+            "D": "Semantic convention validators"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which type of instrumentation requires manual code changes to capture custom telemetry?",
+        "options": {
+            "A": "Automatic instrumentation",
+            "B": "Agent-based instrumentation",
+            "C": "Manual instrumentation",
+            "D": "Collector instrumentation"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "In the OpenTelemetry SDK pipelines, what is the order of operations for processing telemetry data?",
+        "options": {
+            "A": "Exporter → Processor → Sampler",
+            "B": "Sampler → Processor → Exporter",
+            "C": "Processor → Sampler → Exporter",
+            "D": "Exporter → Sampler → Processor"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which Collector processor is used to remove sensitive attributes (e.g., passwords) from telemetry data?",
+        "options": {
+            "A": "Batch processor",
+            "B": "Filter processor",
+            "C": "Attribute processor (with delete action)",
+            "D": "Dropper processor"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a best practice for error handling in observability pipelines?",
+        "options": {
+            "A": "Silently dropping failed telemetry exports",
+            "B": "Retrying failed exports with backoff",
+            "C": "Disabling pipeline components on errors",
+            "D": "Ignoring schema mismatches"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the Fundamentals domain, what does 'analysis and outcomes' refer to?",
+        "options": {
+            "A": "Configuring Collector receivers",
+            "B": "Using telemetry data to solve operational issues",
+            "C": "Writing SDK extensions",
+            "D": "Scaling Collector deployments"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of the 'context propagator' in the OpenTelemetry SDK?",
+        "options": {
+            "A": "To define metric aggregation rules",
+            "B": "To serialize and deserialize context across service boundaries",
+            "C": "To transform logs into metrics",
+            "D": "To configure Collector pipelines"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which part of the Collector configuration specifies how telemetry data is modified (e.g., adding environment labels)?",
+        "options": {
+            "A": "Receivers",
+            "B": "Processors",
+            "C": "Exporters",
+            "D": "Extensions"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the Maintenance domain, how does context propagation affect trace completeness?",
+        "options": {
+            "A": "It ensures spans from different services are linked in a single trace",
+            "B": "It reduces the size of log entries",
+            "C": "It increases metric cardinality",
+            "D": "It speeds up Collector deployment"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What distinguishes 'logs' from 'traces' in telemetry data (Fundamentals domain)?",
+        "options": {
+            "A": "Logs are always numerical; traces are text-based",
+            "B": "Logs capture discrete events with timestamps; traces capture workflows over time",
+            "C": "Logs require manual instrumentation; traces use automatic",
+            "D": "Logs are processed by the SDK; traces by the Collector"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the OpenTelemetry API, what method is used to mark a span as failed?",
+        "options": {
+            "A": "span.setStatus(Status.ERROR)",
+            "B": "span.fail()",
+            "C": "span.error(true)",
+            "D": "span.markAsFailed()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is a benefit of using a 'deployment pipeline' for Collector configuration?",
+        "options": {
+            "A": "Automatic scaling without manual intervention",
+            "B": "Consistent configuration across Collector instances",
+            "C": "Reduced need for semantic conventions",
+            "D": "Faster span creation in the SDK"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When debugging pipeline issues, what does a '404 error' from the Collector indicate?",
+        "options": {
+            "A": "The exporter is misconfigured with an invalid endpoint",
+            "B": "The sampler is dropping too many traces",
+            "C": "Semantic conventions are outdated",
+            "D": "The SDK is not instrumented correctly"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "In the Fundamentals domain, why is instrumentation critical for cloud-native applications?",
+        "options": {
+            "A": "They have fewer logs by default",
+            "B": "Distributed architectures require visibility across services",
+            "C": "They only work with the OpenTelemetry Collector",
+            "D": "Manual scaling is required"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of 'SDK configuration' in the OpenTelemetry API and SDK domain?",
+        "options": {
+            "A": "To define Collector deployment modes",
+            "B": "To set up samplers, processors, and exporters for telemetry",
+            "C": "To transform log formats in the Collector",
+            "D": "To manage schema versions"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does the OpenTelemetry Collector handle 'backpressure' when exporters are slow?",
+        "options": {
+            "A": "Drops all incoming data",
+            "B": "Buffers data temporarily to avoid loss",
+            "C": "Disables receivers until exporters recover",
+            "D": "Automatically scales to add more exporters"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In schema management, what is the impact of a breaking change to semantic conventions?",
+        "options": {
+            "A": "Telemetry queries may return incorrect results",
+            "B": "Collector scaling is disabled",
+            "C": "Automatic instrumentation fails",
+            "D": "SDK pipelines stop processing data"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type in OpenTelemetry is used to measure a value that can increase and decrease (e.g., current number of active users)?",
+        "options": {
+            "A": "Counter",
+            "B": "Histogram",
+            "C": "Gauge",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "In the OpenTelemetry Collector, what is the function of an 'extension'?",
+        "options": {
+            "A": "To receive telemetry data from applications",
+            "B": "To provide auxiliary features like health checks or authentication",
+            "C": "To transform data between formats",
+            "D": "To export data to backends"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry component is responsible for transforming telemetry data (e.g., adding environment labels) before export?",
+        "options": {
+            "A": "Receiver",
+            "B": "Processor",
+            "C": "Exporter",
+            "D": "Sampler"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary benefit of using OTLP-Arrow over standard OTLP for telemetry transport?",
+        "options": {
+            "A": "Lower latency",
+            "B": "Higher compression ratio",
+            "C": "Native Prometheus integration",
+            "D": "Simpler configuration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type in OpenTelemetry is best suited for measuring fluctuating values like current active users?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What distinguishes the 'sidecar' Collector deployment mode from 'gateway' mode?",
+        "options": {
+            "A": "Sidecar runs per application instance; gateway aggregates data centrally",
+            "B": "Gateway requires manual instrumentation; sidecar uses automatic",
+            "C": "Sidecar supports OTLP-Arrow; gateway does not",
+            "D": "Gateway handles context propagation; sidecar does not"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which semantic convention attribute is mandatory for database spans to identify the database management system?",
+        "options": {
+            "A": "db.system",
+            "B": "db.name",
+            "C": "db.statement",
+            "D": "db.user"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the recommended approach to handle sensitive data (e.g., passwords) in telemetry attributes?",
+        "options": {
+            "A": "Use the 'filter' processor to remove attributes",
+            "B": "Enable OTLP encryption",
+            "C": "Apply the 'attribute' processor with delete action",
+            "D": "Configure the sampler to drop sensitive spans"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which component of the OpenTelemetry SDK handles batching and retry logic for exported telemetry?",
+        "options": {
+            "A": "Exporter",
+            "B": "Processor",
+            "C": "SDK Builder",
+            "D": "Propagator"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the 'health check' extension in the Collector configuration?",
+        "options": {
+            "A": "Monitor the Collector's operational status",
+            "B": "Validate telemetry data schema",
+            "C": "Authenticate with exporters",
+            "D": "Adjust sampling rates dynamically"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which type of span represents an outgoing HTTP request to a third-party service?",
+        "options": {
+            "A": "Server span",
+            "B": "Client span",
+            "C": "Producer span",
+            "D": "Consumer span"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the default sampling strategy for traces in the OpenTelemetry SDK?",
+        "options": {
+            "A": "AlwaysOnSampler",
+            "B": "ParentBasedSampler",
+            "C": "TraceIdRatioBasedSampler",
+            "D": "ProbabilitySampler"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which part of the Collector configuration specifies how data is sent to backends like Elasticsearch or Loki?",
+        "options": {
+            "A": "Receivers",
+            "B": "Processors",
+            "C": "Exporters",
+            "D": "Extensions"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the key difference between 'logs' and 'traces' in OpenTelemetry?",
+        "options": {
+            "A": "Logs are time-based; traces are event-based",
+            "B": "Traces capture workflows; logs record discrete events",
+            "C": "Logs require manual instrumentation; traces use automatic",
+            "D": "Traces are exported via OTLP; logs use HTTP"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which OpenTelemetry component is responsible for propagating context (trace ID, baggage) across services?",
+        "options": {
+            "A": "Propagator",
+            "B": "Sampler",
+            "C": "Meter",
+            "D": "Logger"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary use case for the 'histogram' metric type?",
+        "options": {
+            "A": "Counting events with non-decreasing values",
+            "B": "Measuring distribution of values (e.g., response times)",
+            "C": "Tracking current state of a system",
+            "D": "Aggregating data over time intervals"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which deployment strategy for the OpenTelemetry Collector is optimal for high-traffic Kubernetes clusters?",
+        "options": {
+            "A": "Sidecar per pod",
+            "B": "Gateway mode with load balancing",
+            "C": "In-process SDK",
+            "D": "Standalone host agent"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the 'resource' semantic convention in OpenTelemetry?",
+        "options": {
+            "A": "Define span attributes for specific operations",
+            "B": "Identify the environment and infrastructure of a service",
+            "C": "Configure Collector pipeline rules",
+            "D": "Handle context propagation across services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which HTTP status code indicates a misconfigured Collector exporter endpoint?",
+        "options": {
+            "A": "400 Bad Request",
+            "B": "404 Not Found",
+            "C": "500 Internal Server Error",
+            "D": "503 Service Unavailable"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the core function of the 'meter provider' in the OpenTelemetry SDK?",
+        "options": {
+            "A": "Generate metric instruments (counters, gauges)",
+            "B": "Manage span creation and context propagation",
+            "C": "Handle log parsing and formatting",
+            "D": "Configure Collector exporters"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which OpenTelemetry signal is most appropriate for tracking the number of failed API requests over time?",
+        "options": {
+            "A": "Traces",
+            "B": "Metrics",
+            "C": "Logs",
+            "D": "Baggage"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary advantage of using the 'OTel Collector Contrib' distribution over the core distribution?",
+        "options": {
+            "A": "Smaller footprint",
+            "B": "Additional receivers and exporters",
+            "C": "Built-in Prometheus integration",
+            "D": "Simpler configuration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which component in the Collector pipeline is used to deduplicate telemetry data?",
+        "options": {
+            "A": "Dropper processor",
+            "B": "Filter processor",
+            "C": "Batch processor",
+            "D": "Attribute processor"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the role of the 'span processor' in the OpenTelemetry SDK?",
+        "options": {
+            "A": "Transform spans before export",
+            "B": "Generate spans for manual instrumentation",
+            "C": "Handle context propagation",
+            "D": "Aggregate metrics from spans"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which semantic convention attribute is used to identify the HTTP method in a server span?",
+        "options": {
+            "A": "http.method",
+            "B": "http.route",
+            "C": "http.status_code",
+            "D": "http.scheme"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the recommended approach to handle high cardinality metrics in OpenTelemetry?",
+        "options": {
+            "A": "Use the 'filter' processor to drop high-cardinality attributes",
+            "B": "Enable OTLP-Arrow compression",
+            "C": "Apply the 'batch' processor to aggregate data",
+            "D": "Configure the sampler to ignore high-cardinality spans"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which part of the OpenTelemetry data model represents a single operation in a distributed trace?",
+        "options": {
+            "A": "Span",
+            "B": "Event",
+            "C": "Link",
+            "D": "Baggage"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the 'otelcol-contrib' repository in the OpenTelemetry ecosystem?",
+        "options": {
+            "A": "Hosts community-contributed Collector components",
+            "B": "Provides official SDK documentation",
+            "C": "Manages semantic convention updates",
+            "D": "Hosts the core Collector distribution"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type in OpenTelemetry is used to track the total number of requests processed by a service?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary function of the 'baggage' feature in OpenTelemetry?",
+        "options": {
+            "A": "Carry user-defined metadata across spans",
+            "B": "Store trace ID and span ID for propagation",
+            "C": "Filter sensitive data from logs",
+            "D": "Configure Collector exporters"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which HTTP status code indicates a temporary failure in the Collector pipeline?",
+        "options": {
+            "A": "400 Bad Request",
+            "B": "404 Not Found",
+            "C": "500 Internal Server Error",
+            "D": "503 Service Unavailable"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What is the core purpose of the 'semantic conventions' in OpenTelemetry?",
+        "options": {
+            "A": "Standardize telemetry attribute names and values",
+            "B": "Define Collector pipeline rules",
+            "C": "Enable automatic instrumentation",
+            "D": "Handle context propagation across services"
+        },
+        "answer": "A"
+    }
+]
