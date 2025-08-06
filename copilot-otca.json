@@ -578,5 +578,606 @@
       "D": "extension.zpages"
     },
     "answer": "A"
+  },{
+    "question": "Which practice improves service-level insights by deriving metrics from existing logs?",
+    "options": {
+      "A": "Log sampling",
+      "B": "Log-to-metric transformation",
+      "C": "Metric federation",
+      "D": "Distributed tracing"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "In observability, an \"indicator\" metric typically represents what?",
+    "options": {
+      "A": "A raw log entry",
+      "B": "A composite metric derived from multiple sources",
+      "C": "A binary event",
+      "D": "A trace segment"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which characteristic is NOT one of the three pillars of observability?",
+    "options": {
+      "A": "Metrics",
+      "B": "Logs",
+      "C": "Health checks",
+      "D": "Traces"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "To measure concurrent active sessions, which metric instrument would you use?",
+    "options": {
+      "A": "Histogram",
+      "B": "Gauge",
+      "C": "Counter",
+      "D": "UpDownCounter"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which concept refers to correlating spans and logs based on shared trace IDs and timestamps?",
+    "options": {
+      "A": "Data federation",
+      "B": "Cross-signal linking",
+      "C": "Data merging",
+      "D": "Signal filtering"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "How does high cardinality impact metric storage backends?",
+    "options": {
+      "A": "Improves query performance",
+      "B": "Reduces storage needs",
+      "C": "Causes high memory usage",
+      "D": "Optimizes dashboard rendering"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What is the primary difference between logs and events in observability?",
+    "options": {
+      "A": "Logs are structured, events are unstructured",
+      "B": "Events represent discrete state changes, logs record continuous streams",
+      "C": "Logs carry trace context, events do not",
+      "D": "There is no difference"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Distributed tracing primarily helps answer which question?",
+    "options": {
+      "A": "What is the disk usage of a host?",
+      "B": "Which service call chain caused latency?",
+      "C": "How many errors occurred per minute?",
+      "D": "Which user is active?"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which signal type best helps understand CPU utilization over time?",
+    "options": {
+      "A": "Logs",
+      "B": "Events",
+      "C": "Metrics",
+      "D": "Traces"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "In blue-green deployments, observability is used mainly to:",
+    "options": {
+      "A": "Automate container restarts",
+      "B": "Compare performance and errors between environments",
+      "C": "Encrypt data in transit",
+      "D": "Generate user reports"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which SRE practice most closely relies on observability data?",
+    "options": {
+      "A": "Chaos engineering",
+      "B": "Incident retrospectives",
+      "C": "Capacity planning",
+      "D": "All of the above"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "In the context of observability, which description best fits an \"event\" telemetry signal?",
+    "options": {
+      "A": "A continuous stream of log entries",
+      "B": "A discrete state change at a specific point in time",
+      "C": "A numerical value recorded over intervals",
+      "D": "A chain of related spans"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which OpenTelemetry SDK component automatically enriches telemetry data with environment-specific attributes?",
+    "options": {
+      "A": "ResourceDetector",
+      "B": "SpanProcessor",
+      "C": "Exporter",
+      "D": "Sampler"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "How do you assign a custom service.name resource attribute to all telemetry in the Java OpenTelemetry SDK?",
+    "options": {
+      "A": "Call tracer.setAttribute(\"service.name\", name)",
+      "B": "Configure a Resource via SdkTracerProvider.builder().setResource(...)",
+      "C": "Use a Meter to record the service.name",
+      "D": "Specify it in the SpanProcessor configuration"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which metric instrument allows you to record values that can both increase and decrease, such as current memory usage?",
+    "options": {
+      "A": "Counter",
+      "B": "UpDownCounter",
+      "C": "Histogram",
+      "D": "ObservableGauge"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "When using baggage in OpenTelemetry, which practice is recommended to avoid performance overhead?",
+    "options": {
+      "A": "Propagate large binary data items",
+      "B": "Use baggage sparingly and limit item size",
+      "C": "Attach baggage to every span by default",
+      "D": "Encode baggage as base64 strings"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which environment variable controls the propagation formats used by the OpenTelemetry SDK?",
+    "options": {
+      "A": "OTEL_PROPAGATORS",
+      "B": "OTEL_EXPORTER_OTLP_ENDPOINT",
+      "C": "OTEL_SAMPLER_RATIO",
+      "D": "OTEL_BAGGAGE_ITEMS"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "In the Collector’s configuration, which section defines the flow of telemetry from receivers through processors to exporters?",
+    "options": {
+      "A": "receivers",
+      "B": "processors",
+      "C": "exporters",
+      "D": "service.pipelines"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "To drop spans matching a given attribute in the Collector, which processor should you configure?",
+    "options": {
+      "A": "sampling",
+      "B": "spanmetrics",
+      "C": "filter",
+      "D": "tail_sampling"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which OpenTelemetry Collector deployment mode is used when running a central gateway for multiple clusters?",
+    "options": {
+      "A": "Agent",
+      "B": "Gateway",
+      "C": "Sidecar",
+      "D": "Proxy"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which Collector extension exposes Go profiling endpoints under /debug/pprof?",
+    "options": {
+      "A": "zpages",
+      "B": "health_check",
+      "C": "pprof",
+      "D": "memory_limiter"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which command validates your Collector configuration without starting the service?",
+    "options": {
+      "A": "otelcol validate-config",
+      "B": "otelcol --dry-run",
+      "C": "otelcol --config config.yaml --dry-run",
+      "D": "collector-cli check-config"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "What log level provides the most detailed internal decision-making information in the Collector?",
+    "options": {
+      "A": "info",
+      "B": "debug",
+      "C": "trace",
+      "D": "error"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which environment variable sets the verbosity of OpenTelemetry SDK logs?",
+    "options": {
+      "A": "OTEL_LOG_LEVEL",
+      "B": "OTEL_LOG_SINK",
+      "C": "OTEL_COLLECTOR_LOG",
+      "D": "OTEL_SDK_LOG_LEVEL"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which Collector extension must be enabled to view live span data under /debug/tracez?",
+    "options": {
+      "A": "pprof",
+      "B": "zpages",
+      "C": "health_check",
+      "D": "recovery"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which processor in the Collector makes sampling decisions after a span has ended to support tail-based sampling?",
+    "options": {
+      "A": "tail_sampling",
+      "B": "probabilistic_sampler",
+      "C": "batch",
+      "D": "memory_limiter"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which principle distinguishes observability from traditional monitoring?",
+    "options": {
+      "A": "Observability relies exclusively on predefined dashboards",
+      "B": "Observability lets you ask new questions of your telemetry without changing code",
+      "C": "Monitoring covers only infrastructure metrics",
+      "D": "Monitoring uses tracing, while observability uses logs"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "In OpenTelemetry, an attribute is considered high cardinality when it has:",
+    "options": {
+      "A": "More than 100 unique values per minute",
+      "B": "Only boolean values",
+      "C": "Exactly two possible values",
+      "D": "No impact on backend storage"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "To correlate logs with traces in OpenTelemetry, you must include which field in your log record?",
+    "options": {
+      "A": "service.name",
+      "B": "trace_id",
+      "C": "span_status",
+      "D": "log_severity"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which OpenTelemetry concept groups data by instrumentation library name and version?",
+    "options": {
+      "A": "Instrumentation Scope",
+      "B": "Resource Schema",
+      "C": "Signal Registry",
+      "D": "SDK Listener"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which object in the OpenTelemetry SDK holds the name and version of the instrumented library?",
+    "options": {
+      "A": "LibraryMetadata",
+      "B": "InstrumentationLibraryInfo",
+      "C": "ResourceAccount",
+      "D": "SignalDescriptor"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "You want to rename and drop attributes on a metric. Which SDK feature do you configure?",
+    "options": {
+      "A": "MetricReader",
+      "B": "View",
+      "C": "Exporter",
+      "D": "Sampler"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "According to OpenTelemetry semantic conventions, which attribute key denotes the database system used?",
+    "options": {
+      "A": "db.vendor",
+      "B": "db.system",
+      "C": "sql.database",
+      "D": "database.name"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which semantic convention attribute represents the remote network peer’s IP address?",
+    "options": {
+      "A": "network.peer.ip",
+      "B": "net.peer.address",
+      "C": "peer_ip",
+      "D": "ip.remote"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "How do you disable HTTP auto-instrumentation via environment variable?",
+    "options": {
+      "A": "OTEL_HTTP_AUTOINSTRUMENTATION=false",
+      "B": "OTEL_INSTRUMENTATION_HTTP_ENABLED=false",
+      "C": "OTEL_EXPORTER_OTLP_DISABLED=true",
+      "D": "OTEL_NO_INSTRUMENTATION=true"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which SDK component automatically adds host and deployment metadata to all telemetry?",
+    "options": {
+      "A": "ResourceDetector",
+      "B": "SpanProcessor",
+      "C": "BatchSpanProcessor",
+      "D": "Sampler"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "In an OpenTelemetry Collector pipeline, which processor enforces or adds span attributes?",
+    "options": {
+      "A": "resource",
+      "B": "attributes",
+      "C": "batch",
+      "D": "filter"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "What is the default port for the OTLP/gRPC receiver in the Collector?",
+    "options": {
+      "A": "55680",
+      "B": "4317",
+      "C": "4318",
+      "D": "55679"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which Collector deployment mode runs as a sidecar alongside your application?",
+    "options": {
+      "A": "Gateway",
+      "B": "Agent",
+      "C": "Central",
+      "D": "Proxy"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "To expose a health-check endpoint in the Collector, you must enable which extension?",
+    "options": {
+      "A": "zpages",
+      "B": "pprof",
+      "C": "health_check",
+      "D": "recovery"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which Collector extension helps prevent out-of-memory by dropping data when usage nears a limit?",
+    "options": {
+      "A": "batch",
+      "B": "memory_limiter",
+      "C": "tail_sampling",
+      "D": "queue"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best describes the difference between monitoring and observability?",
+    "options": {
+      "A": "Monitoring and observability are interchangeable terms",
+      "B": "Monitoring focuses on predefined alerts, observability lets you explore arbitrary telemetry without new code",
+      "C": "Observability only uses logs, monitoring uses metrics",
+      "D": "Monitoring requires no instrumentation, observability does"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "In the context of observability, a Service Level Indicator (SLI) is:",
+    "options": {
+      "A": "A target threshold for alerts",
+      "B": "A numerical measure of system performance or reliability",
+      "C": "The maximum allowed downtime per month",
+      "D": "A binary up/down status"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which telemetry signal is most effective for capturing unstructured diagnostic messages?",
+    "options": {
+      "A": "Metrics",
+      "B": "Traces",
+      "C": "Logs",
+      "D": "Events"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Correlating logs, metrics, and traces primarily helps achieve:",
+    "options": {
+      "A": "Reduced telemetry storage costs",
+      "B": "Faster root-cause analysis",
+      "C": "Lower network bandwidth usage",
+      "D": "Automated code instrumentation"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which method adds a custom event to an existing span using the OpenTelemetry API?",
+    "options": {
+      "A": "span.addEvent()",
+      "B": "span.logEvent()",
+      "C": "span.recordEvent()",
+      "D": "span.emitEvent()"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "How do you set the status of a span to OK in OpenTelemetry code?",
+    "options": {
+      "A": "span.setStatus(\"OK\")",
+      "B": "span.setStatus(StatusCode.OK)",
+      "C": "span.ok()",
+      "D": "span.markAsOk()"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which metric instrument should you use to record the current number of active sessions?",
+    "options": {
+      "A": "Counter",
+      "B": "Histogram",
+      "C": "Gauge",
+      "D": "UpDownCounter"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which environment variable is used to configure the trace sampler type in the OpenTelemetry SDK?",
+    "options": {
+      "A": "OTEL_TRACES_SAMPLER",
+      "B": "OTEL_PROPAGATORS",
+      "C": "OTEL_EXPORTER_OTLP_ENDPOINT",
+      "D": "OTEL_METRICS_EXPORTER"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "If you want to record every trace without sampling, you should use which sampler?",
+    "options": {
+      "A": "AlwaysOnSampler",
+      "B": "AlwaysOffSampler",
+      "C": "TraceIdRatioBasedSampler",
+      "D": "ParentBasedSampler"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "Which instrument would you use to capture the distribution of request payload sizes?",
+    "options": {
+      "A": "ObservableGauge",
+      "B": "Histogram",
+      "C": "Counter",
+      "D": "UpDownCounter"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "To create a new span manually, which API call do you use?",
+    "options": {
+      "A": "tracer.startSpan(\"operationName\")",
+      "B": "tracer.spanBuilder(\"operationName\").startSpan()",
+      "C": "tracer.createSpan(\"operationName\")",
+      "D": "tracer.newSpan(\"operationName\")"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which SpanProcessor exports spans asynchronously in batches?",
+    "options": {
+      "A": "SimpleSpanProcessor",
+      "B": "BatchSpanProcessor",
+      "C": "SamplingSpanProcessor",
+      "D": "ExportingSpanProcessor"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "In the Collector configuration file, under which top-level section do you declare extensions like memory_limiter and pprof?",
+    "options": {
+      "A": "receivers",
+      "B": "extensions",
+      "C": "processors",
+      "D": "exporters"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "What is the default port for the Zipkin receiver in the OpenTelemetry Collector?",
+    "options": {
+      "A": "4317",
+      "B": "4318",
+      "C": "9411",
+      "D": "14250"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "To scrape Prometheus metrics from an application in the Collector, you must configure which receiver?",
+    "options": {
+      "A": "otlpreceiver",
+      "B": "zipkinreceiver",
+      "C": "jaegerreceiver",
+      "D": "prometheusreceiver"
+    },
+    "answer": "D"
+  },
+  {
+    "question": "Which processor can attach or modify Resource attributes on incoming telemetry in the Collector?",
+    "options": {
+      "A": "attributes",
+      "B": "resource",
+      "C": "batch",
+      "D": "filter"
+    },
+    "answer": "B"
+  },
+  {
+    "question": "Which extension prevents Collector crashes by recovering from panics in pipeline components?",
+    "options": {
+      "A": "recovery",
+      "B": "memory_limiter",
+      "C": "health_check",
+      "D": "zpages"
+    },
+    "answer": "A"
+  },
+  {
+    "question": "What command would you run to validate a Collector configuration file without starting the service?",
+    "options": {
+      "A": "otelcol validate-config",
+      "B": "otelcol --dry-run",
+      "C": "otelcol --config config.yaml --dry-run",
+      "D": "collector-cli check-config"
+    },
+    "answer": "C"
+  },
+  {
+    "question": "Which extension provides in-process debug pages under /debug/tracez and /debug/metrics in the Collector?",
+    "options": {
+      "A": "pprof",
+      "B": "zpages",
+      "C": "health_check",
+      "D": "memory_limiter"
+    },
+    "answer": "B"
   }
 ]
+```
+
